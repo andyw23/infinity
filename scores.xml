@@ -1,6 +1,6 @@
 <program name="Tim 16">
     <components>
-        <sample id="A" file="A01.mp3" length="25.2130">
+        <sample id="A" file="A01" length="25.2130">
             <!--variant id="example" -->
             <!-- start time within the sample, in mS -->
             <!-- startTime>10</startTime -->
@@ -38,7 +38,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="altai dopsh" file="altai dopsh.mp3" length="81.4400">
+        <sample id="altai dopsh" file="altai dopsh" length="81.4400">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:20</looplength>
@@ -76,7 +76,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="B" file="B01.mp3" length="54.0260">
+        <sample id="B" file="B01" length="54.0260">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -108,7 +108,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="BAS 1" file="BAS 1.mp3" length="1170.0130">
+        <sample id="BAS 1" file="BAS 1" length="1170.0130">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -304,7 +304,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="BAS 3b" file="BAS 3b.mp3">
+        <sample id="BAS 3b" file="BAS 3b">
             <variant id="1">
                 <startTime>0</startTime>
                 <endTime>30000</endTime>
@@ -314,7 +314,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="bass ekki 1" file="bass ekki 1.mp3" length="46.9010">
+        <sample id="bass ekki 1" file="bass ekki 1" length="46.9010">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>4:00</looplength>
@@ -341,7 +341,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="bass ekki 3" file="bass ekki 3b.mp3" length="22.6810">
+        <sample id="bass ekki 3" file="bass ekki 3b" length="22.6810">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>4:00</looplength>
@@ -368,7 +368,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="bass ekki 6a" file="bass ekki 6a.mp3" length="18.2040">
+        <sample id="bass ekki 6a" file="bass ekki 6a" length="18.2040">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>3:50</looplength>
@@ -377,7 +377,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="beat w stuff" file="beat w stuff.mp3" length="15.7600">
+        <sample id="beat w stuff" file="beat w stuff" length="15.7600">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -397,7 +397,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Bells down" file="Bells down.mp3" length="51.6260">
+        <sample id="Bells down" file="Bells down" length="51.6260">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -423,7 +423,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="brothers" file="brothers.mp3" length="82.0360">
+        <sample id="brothers" file="brothers" length="82.0360">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -431,7 +431,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="cards" file="cards.mp3" length="76.1440">
+        <sample id="cards" file="cards" length="76.1440">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -441,7 +441,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="conch" file="conch.mp3">
+        <sample id="conch" file="conch">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -449,7 +449,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="crow" file="crow.mp3" length="5.8050">
+        <sample id="crow" file="crow" length="5.8050">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -457,7 +457,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="dark lecky" file="dark lecky a.mp3" length="360.0000">
+        <sample id="dark lecky" file="dark lecky a" length="360.0000">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -544,7 +544,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="deep drum" file="deep drum.mp3" length="4.1010">
+        <sample id="deep drum" file="deep drum" length="4.1010">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -552,7 +552,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="deep infinity" file="deep infinity.mp3" length="60.0000">
+        <sample id="deep infinity" file="deep infinity" length="60.0000">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>3.40</looplength>
@@ -583,7 +583,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="dopsh" file="dopsh.mp3" length="44.4450">
+        <sample id="dopsh" file="dopsh" length="44.4450">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:11</looplength>
@@ -614,7 +614,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="drummy" file="drummy.mp3" length="20.3330">
+        <sample id="drummy" file="drummy" length="20.3330">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:00</looplength>
@@ -630,7 +630,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="dung ken 2" file="dung ken 2.mp3" length="42.2230">
+        <sample id="dung ken 2" file="dung ken 2" length="42.2230">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>4:00</looplength>
@@ -639,7 +639,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="dung ken mon" file="dung ken mon.mp3" length="86.7640">
+        <sample id="dung ken mon" file="dung ken mon" length="86.7640">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:34</looplength>
@@ -702,7 +702,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="dung norway 1" file="dung norway 1.mp3" length="35.3020">
+        <sample id="dung norway 1" file="dung norway 1" length="35.3020">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -717,7 +717,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="dung norway 2" file="dung norway 2.mp3" length="16.8360">
+        <sample id="dung norway 2" file="dung norway 2" length="16.8360">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>0:26</looplength>
@@ -733,7 +733,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="dungs at g's" file="dungs at gs.mp3" length="175.9560">
+        <sample id="dungs at g's" file="dungs at gs" length="175.9560">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -742,7 +742,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="dungurs both" file="dungurs both.mp3" length="42.5030">
+        <sample id="dungurs both" file="dungurs both" length="42.5030">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>4:00</looplength>
@@ -796,7 +796,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="echo drone" file="echo drone.mp3" length="300.2430">
+        <sample id="echo drone" file="echo drone" length="300.2430">
             <variant id="1">
                 <startTime>7000</startTime>
                 <endTime>157000</endTime>
@@ -822,7 +822,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="electrodrone down" file="electrodrone down.mp3" length="47.5430">
+        <sample id="electrodrone down" file="electrodrone down" length="47.5430">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>4:00</looplength>
@@ -831,7 +831,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="g cello solo smeazed 1" file="g cello solo smeazed 1.mp3" length="101.2390">
+        <sample id="g cello solo smeazed 1" file="g cello solo smeazed 1" length="101.2390">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="40"/>
@@ -848,7 +848,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="G1" file="g01.mp3">
+        <sample id="G1" file="g01">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="255"/>
@@ -861,7 +861,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="G2" file="g02.mp3" length="60.7730">
+        <sample id="G2" file="g02" length="60.7730">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -874,7 +874,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="G3" file="g03.mp3" length="57.8930">
+        <sample id="G3" file="g03" length="57.8930">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="255"/>
@@ -964,7 +964,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="gendos a smeaze1" file="gendos a smeaze1.mp3" length="19.0000">
+        <sample id="gendos a smeaze1" file="gendos a smeaze1" length="19.0000">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -972,7 +972,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="gendos cello kyz" file="gendos cello kyz.mp3" length="159.4400">
+        <sample id="gendos cello kyz" file="gendos cello kyz" length="159.4400">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -988,7 +988,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="gendos house chad 1" file="gendos house chad 1.mp3" length="54.7">
+        <sample id="gendos house chad 1" file="gendos house chad 1" length="54.7">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>1:14</looplength>
@@ -1008,7 +1008,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="git scrape" file="git scrape.mp3" length="41.2200">
+        <sample id="git scrape" file="git scrape" length="41.2200">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>5:20</looplength>
@@ -1040,7 +1040,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="git shit 10" file="git shit 10.mp3" length="49.5620">
+        <sample id="git shit 10" file="git shit 10" length="49.5620">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:10</looplength>
@@ -1065,7 +1065,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="git shit 12" file="git shit 12.mp3" length="41.6820">
+        <sample id="git shit 12" file="git shit 12" length="41.6820">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:10</looplength>
@@ -1082,7 +1082,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="git shit 13" file="git shit 13.mp3" length="39.0940">
+        <sample id="git shit 13" file="git shit 13" length="39.0940">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:10</looplength>
@@ -1099,7 +1099,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="git shit 15" file="git shit 15.mp3" length="26.7920">
+        <sample id="git shit 15" file="git shit 15" length="26.7920">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:30</looplength>
@@ -1140,7 +1140,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="GKT" file="GKT.mp3" length="95.5160">
+        <sample id="GKT" file="GKT" length="95.5160">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1148,7 +1148,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="GKT rev" file="GKT rev.mp3" length="95.5160">
+        <sample id="GKT rev" file="GKT rev" length="95.5160">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1156,7 +1156,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Gong kyz" file="Gong kyz.mp3" length="225.0000">
+        <sample id="Gong kyz" file="Gong kyz" length="225.0000">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1187,7 +1187,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="gongs" file="gongs.mp3" length="19.1860">
+        <sample id="gongs" file="gongs" length="19.1860">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:15</looplength>
@@ -1196,7 +1196,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="gongs down" file="gongs down.mp3" length="52.7650">
+        <sample id="gongs down" file="gongs down" length="52.7650">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1204,7 +1204,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="GPad 1" file="GPad 1.mp3">
+        <sample id="GPad 1" file="GPad 1">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1215,7 +1215,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="hiklarn" file="hiklarn.mp3" length="64.5050">
+        <sample id="hiklarn" file="hiklarn" length="64.5050">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -1223,7 +1223,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="humcrash" file="humcrash.mp3" length="4.9270">
+        <sample id="humcrash" file="humcrash" length="4.9270">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1255,7 +1255,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <!--sample id="hyperslo end" file="hyperslo end.mp3">
+        <!--sample id="hyperslo end" file="hyperslo end">
 			<variant id="1">
 				<loopcount>1</loopcount>
 				<dynamics>
@@ -1263,7 +1263,7 @@
 				</dynamics>
 			</variant>
 		</sample-->
-        <sample id="hypo end" file="hypo end.mp3" length="76.3530">
+        <sample id="hypo end" file="hypo end" length="76.3530">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1281,7 +1281,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="K1" file="k01.mp3" length="50.3600">
+        <sample id="K1" file="k01" length="50.3600">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="124"/>
@@ -1298,7 +1298,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="K2" file="k02.mp3" length="63.9330">
+        <sample id="K2" file="k02" length="63.9330">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -1312,7 +1312,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="K3" file="k03.mp3" length="49.7330">
+        <sample id="K3" file="k03" length="49.7330">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -1345,7 +1345,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="kam banya" file="kam banya.mp3" length="61.4970">
+        <sample id="kam banya" file="kam banya" length="61.4970">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -1354,7 +1354,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="kam churek" file="kam churek.mp3" length="61.4630">
+        <sample id="kam churek" file="kam churek" length="61.4630">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -1363,7 +1363,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="kam ko 1" file="kam ko 1.mp3" length="67.1990">
+        <sample id="kam ko 1" file="kam ko 1" length="67.1990">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -1372,7 +1372,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="kam ko arj" file="kam ko arj.mp3" length="76.0000">
+        <sample id="kam ko arj" file="kam ko arj" length="76.0000">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -1381,7 +1381,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="kam ks" file="kam ks.mp3" length="105.6750">
+        <sample id="kam ks" file="kam ks" length="105.6750">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -1390,7 +1390,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="kam wolf" file="kam wolf.mp3" length="67.0000">
+        <sample id="kam wolf" file="kam wolf" length="67.0000">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -1399,7 +1399,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg c#" file="karg c# 2.mp3" length="56.4240">
+        <sample id="karg c#" file="karg c# 2" length="56.4240">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -1413,7 +1413,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg d#" file="karg d#.mp3" length="128.6090">
+        <sample id="karg d#" file="karg d#" length="128.6090">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="90"/>
@@ -1471,7 +1471,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg deep c#" file="karg deep c#.mp3" length="47.1920">
+        <sample id="karg deep c#" file="karg deep c#" length="47.1920">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>4:10</looplength>
@@ -1544,21 +1544,21 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg deep e1" file="karg deep e1.mp3">
+        <sample id="karg deep e1" file="karg deep e1">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg e 1" file="karg e 1.mp3">
+        <sample id="karg e 1" file="karg e 1">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="90"/>
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg e" file="karg e.mp3" length="165.6040">
+        <sample id="karg e" file="karg e" length="165.6040">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>3:40</looplength>
@@ -1572,21 +1572,21 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg g" file="karg g.mp3">
+        <sample id="karg g" file="karg g">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="90"/>
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg hi fg" file="karg hi fg.mp3">
+        <sample id="karg hi fg" file="karg hi fg">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="90"/>
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg hi g" file="karg hi g.mp3" length="37.6160">
+        <sample id="karg hi g" file="karg hi g" length="37.6160">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -1596,7 +1596,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg noise g" file="karg noise g.mp3" length="45.2500">
+        <sample id="karg noise g" file="karg noise g" length="45.2500">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>5:20</looplength>
@@ -1618,7 +1618,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Ken 1" file="Ken 1.mp3" length="593.9460">
+        <sample id="Ken 1" file="Ken 1" length="593.9460">
             <variant id="1">
                 <startTime>0</startTime>
                 <endTime>160000</endTime>
@@ -1661,7 +1661,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Ken 2" file="Ken 2.mp3" length="141.9490">
+        <sample id="Ken 2" file="Ken 2" length="141.9490">
             <variant id="1">
                 <startTime>0</startTime>
                 <endTime>140000</endTime>
@@ -1695,7 +1695,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Ken 3" file="Ken 3.mp3" length="269.3170">
+        <sample id="Ken 3" file="Ken 3" length="269.3170">
             <variant id="1">
                 <startTime>0</startTime>
                 <endTime>160000</endTime>
@@ -1713,7 +1713,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Klarnbreath" file="Audio CD Clip.mp3" length="184.7940">
+        <sample id="Klarnbreath" file="Audio CD Clip" length="184.7940">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1749,7 +1749,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="klarnup" file="klarnup.mp3" length="64.6380">
+        <sample id="klarnup" file="klarnup" length="64.6380">
             <variant id="1">
                 <startTime>28199</startTime>
                 <endTime>52919</endTime>
@@ -1780,7 +1780,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="kyz" file="kyz.mp3" length="120.0460">
+        <sample id="kyz" file="kyz" length="120.0460">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1797,7 +1797,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Lisa 1" file="Frag 1.mp3" length="35.7200">
+        <sample id="Lisa 1" file="Frag 1" length="35.7200">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1811,7 +1811,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Lisa 2" file="Frag 2.mp3">
+        <sample id="Lisa 2" file="Frag 2">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -1819,7 +1819,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Lisa 3" file="Frag 3.mp3" length="30.7600">
+        <sample id="Lisa 3" file="Frag 3" length="30.7600">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -1845,7 +1845,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Lisa 4" file="Frag 4.mp3" length="73.0000">
+        <sample id="Lisa 4" file="Frag 4" length="73.0000">
             <variant id="1">
                 <startTime>16000</startTime>
                 <endTime>60000</endTime>
@@ -1855,7 +1855,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="loud beat" file="loud beat.mp3" length="28.9140">
+        <sample id="loud beat" file="loud beat" length="28.9140">
             <variant id="1">
                 <startTime>6279</startTime>
                 <endTime>29133</endTime>
@@ -1925,7 +1925,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="mad live loop" file="mad live loop.mp3" length="26.3160">
+        <sample id="mad live loop" file="mad live loop" length="26.3160">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>3:00</looplength>
@@ -1982,7 +1982,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="more git shit 4" file="more git shit 04.mp3" length="6.4660">
+        <sample id="more git shit 4" file="more git shit 04" length="6.4660">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1990,7 +1990,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="more git shit 6" file="more git shit 06.mp3" length="5.8730">
+        <sample id="more git shit 6" file="more git shit 06" length="5.8730">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1998,7 +1998,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="more git shit 7" file="more git shit 07.mp3" length="13.2470">
+        <sample id="more git shit 7" file="more git shit 07" length="13.2470">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2006,7 +2006,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="mw7up" file="mw7.mp3" length="235.7200">
+        <sample id="mw7up" file="mw7" length="235.7200">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2014,7 +2014,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="mw8up" file="mw8.mp3" length="235.2270">
+        <sample id="mw8up" file="mw8" length="235.2270">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2022,7 +2022,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="mw9up" file="mw9.mp3" length="281.2400">
+        <sample id="mw9up" file="mw9" length="281.2400">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2030,7 +2030,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Nantes 2" file="Nantes 2.mp3" length="312.9200">
+        <sample id="Nantes 2" file="Nantes 2" length="312.9200">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2038,7 +2038,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="nantes 4" file="nantes 4.mp3" length="286.0660">
+        <sample id="nantes 4" file="nantes 4" length="286.0660">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2046,7 +2046,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="nantes 6" file="nantes 6.mp3" length="456.4130">
+        <sample id="nantes 6" file="nantes 6" length="456.4130">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2054,7 +2054,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="nantes 7" file="nantes 7.mp3" length="176.9220">
+        <sample id="nantes 7" file="nantes 7" length="176.9220">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2062,7 +2062,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="NAT xd 1" file="NAT xd 1.mp3" length="81.3710">
+        <sample id="NAT xd 1" file="NAT xd 1" length="81.3710">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2078,7 +2078,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="NIJ 2 down" file="NIJ 2 down.mp3" length="89.7060">
+        <sample id="NIJ 2 down" file="NIJ 2 down" length="89.7060">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:07</looplength>
@@ -2090,7 +2090,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="past sound" file="past sound.mp3" length="43.8680">
+        <sample id="past sound" file="past sound" length="43.8680">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:00</looplength>
@@ -2102,7 +2102,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="PB 3" file="PB snare 3.mp3">
+        <sample id="PB 3" file="PB snare 3">
             <variant id="1">
                 <loopcount>8</loopcount>
                 <looplength>1:00</looplength>
@@ -2116,7 +2116,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="pounding 1" file="pounding 1.mp3" length="42.3230">
+        <sample id="pounding 1" file="pounding 1" length="42.3230">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:42</looplength>
@@ -2176,7 +2176,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="pounding 2" file="pounding 2.mp3" length="58.7600">
+        <sample id="pounding 2" file="pounding 2" length="58.7600">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:42</looplength>
@@ -2263,7 +2263,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="pounding 4" file="pounding 4.mp3" length="38.1960">
+        <sample id="pounding 4" file="pounding 4" length="38.1960">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>1:01</looplength>
@@ -2279,7 +2279,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="pounding 5" file="pounding 5.mp3" length="43.1900">
+        <sample id="pounding 5" file="pounding 5" length="43.1900">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:42</looplength>
@@ -2311,7 +2311,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="pounding 6" file="pounding 6.mp3" length="15.9330">
+        <sample id="pounding 6" file="pounding 6" length="15.9330">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>1:37</looplength>
@@ -2365,7 +2365,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="pounding 7" file="pounding 7.mp3" length="32.3020">
+        <sample id="pounding 7" file="pounding 7" length="32.3020">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:42</looplength>
@@ -2426,7 +2426,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="R 1" file="R 1.mp3" length="231.7320">
+        <sample id="R 1" file="R 1" length="231.7320">
             <variant id="1">
                 <startTime>0</startTime>
                 <endTime>160000</endTime>
@@ -2446,14 +2446,14 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="revcrash" file="revcrash.mp3" length="3.3400">
+        <sample id="revcrash" file="revcrash" length="3.3400">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="190"/>
                 </dynamics>
             </variant>
         </sample>
-        <sample id="rock fire" file="rock fire 2.mp3" length="133.2350">
+        <sample id="rock fire" file="rock fire 2" length="133.2350">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -2492,7 +2492,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="rock ock" file="rock ock.mp3" length="298.0000">
+        <sample id="rock ock" file="rock ock" length="298.0000">
             <variant id="1">
                 <startTime>22000</startTime>
                 <endTime>113000</endTime>
@@ -2503,7 +2503,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="sheep ritual" file="sheep ritual.mp3" length="103.3450">
+        <sample id="sheep ritual" file="sheep ritual" length="103.3450">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:15</looplength>
@@ -2514,7 +2514,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="shinedrone" file="shinedrone.mp3" length="46.1660">
+        <sample id="shinedrone" file="shinedrone" length="46.1660">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>1:30</looplength>
@@ -2523,7 +2523,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="SIL 6.3" file="SIL 6.3.mp3" length="625.1100">
+        <sample id="SIL 6.3" file="SIL 6.3" length="625.1100">
             <variant id="1">
                 <startTime>0</startTime>
                 <endTime>13000</endTime>
@@ -2580,7 +2580,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="SIL 6.4" file="SIL 6.4.mp3" length="211.5220">
+        <sample id="SIL 6.4" file="SIL 6.4" length="211.5220">
             <variant id="1">
                 <startTime>40000</startTime>
                 <loopcount>1</loopcount>
@@ -2649,7 +2649,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="skywatermoon" file="skywatermoon.mp3" length="1332.2030">
+        <sample id="skywatermoon" file="skywatermoon" length="1332.2030">
             <variant id="1">
                 <startTime>0</startTime>
                 <endTime>120000</endTime>
@@ -2693,7 +2693,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="storm" file="storm.mp3" length="61.6830">
+        <sample id="storm" file="storm" length="61.6830">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2713,7 +2713,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="T1" file="t01.mp3" length="53.6800">
+        <sample id="T1" file="t01" length="53.6800">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -2723,7 +2723,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="T2" file="t02.mp3" length="105.3600">
+        <sample id="T2" file="t02" length="105.3600">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -2792,14 +2792,14 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="T3" file="t03.mp3" length="58.0130">
+        <sample id="T3" file="t03" length="58.0130">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="50"/>
                 </dynamics>
             </variant>
         </sample>
-        <sample id="tdung fst b" file="tdung fst b.mp3" length="34.0000">
+        <sample id="tdung fst b" file="tdung fst b" length="34.0000">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:42</looplength>
@@ -2808,7 +2808,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="tdung ir b" file="tdung ir b.mp3" length="22.0000">
+        <sample id="tdung ir b" file="tdung ir b" length="22.0000">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:30</looplength>
@@ -2831,7 +2831,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="thunder" file="thunder.mp3" length="16.0500">
+        <sample id="thunder" file="thunder" length="16.0500">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2845,7 +2845,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="tibetan low bells" file="tibetan low bells.mp3" length="94.5510">
+        <sample id="tibetan low bells" file="tibetan low bells" length="94.5510">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2864,7 +2864,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="tibetloop down" file="tibetloop down.mp3" length="5.0090">
+        <sample id="tibetloop down" file="tibetloop down" length="5.0090">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>5:20</looplength>
@@ -2900,7 +2900,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Track 9 down" file="track 9 down.mp3" length="268.6250">
+        <sample id="Track 9 down" file="track 9 down" length="268.6250">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -2924,7 +2924,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="traffic" file="traffic.mp3" length="27.7890">
+        <sample id="traffic" file="traffic" length="27.7890">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:45</looplength>
@@ -2959,7 +2959,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="voice 2 stereo smeazed" file="voice 2 stereo smeazed.mp3" length="16.0000">
+        <sample id="voice 2 stereo smeazed" file="voice 2 stereo smeazed" length="16.0000">
             <variant id="1">
                 <loopcount>5</loopcount>
                 <loopStartTime>4050</loopStartTime>
@@ -2969,7 +2969,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="windmill" file="windmill.mp3" length="11.2730">
+        <sample id="windmill" file="windmill" length="11.2730">
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>2:15</looplength>

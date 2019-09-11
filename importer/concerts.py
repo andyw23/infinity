@@ -32,10 +32,16 @@ class Concert(Component):
         return (not self.__has_parts())
 
     def get_events(self, partoption=None):
-        res = {}
+        """
+        returns a list of events pertaining to this concert
+
+        :param partoption: optional argument containing an object (Part or Option)
+        :return: list of saple dictionaries and / or other concert lists
+        """
+        res = []
         for part in self.parts.values():
             obj = Component.get_component_by_id(part.id)
-            res[len(res)] = obj.get_events(part)
+            res.append(obj.get_events(part))
         return res
 
 

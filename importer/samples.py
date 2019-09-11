@@ -38,7 +38,7 @@ class Sample(Component):
 
     def get_events(self, partoption=None):
         variant = None if (partoption == None) else self.get_variant_by_id(partoption.variant)
-        return {b'SAMPLE_ID': self.id, b'SAMPLE': self, b'VARIANT': variant}
+        return {'SAMPLE_ID': self.id, 'SAMPLE': self, 'VARIANT': variant}
 
 
 class Variant:

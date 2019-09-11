@@ -14,7 +14,7 @@ logging.basicConfig(
 # ^([^\[]+)(\[[\s\d]+])\s*(\w*)\s*-\s*(\S*)\s*-(.+)$
 from importer import *
 from importer.components import Component
-from interpreter.events import ConcertEvents
+from interpreter.events import *
 from utils.utils import print_format_pretty as pfp
 
 
@@ -32,6 +32,8 @@ def report():
 
 current_score = scores.Score.get_random_score_events()
 # print(current_score)
-concert_events = ConcertEvents(current_score)
+concert_events = unpack_concert_events(current_score)
 
 report()
+
+print(concert_events)
