@@ -5,14 +5,14 @@ from importer.samples import Sample
 
 class Concert(Component):
     """Creates a Concert object"""
-    type = 'CONCERT'
+    component_type = 'CONCERT'
     elements_str = "./components/concert"
 
     def get_elements():
         return Component.get_elements(Concert.elements_str)
 
     def __init__(self, concert):
-        self.type = Concert.type
+        self.component_type = Concert.component_type
         self.id = concert.get("id").upper()
         self.add_parts(concert.findall("./part"))
         if self.__has_no_parts():
@@ -22,7 +22,7 @@ class Concert(Component):
         """Add parts to the choice"""
         self.parts = {}
         for part in parts:
-            par = Part(part)
+            par = Part(self, part)
             self.parts[par.id] = par
 
     def __has_parts(self):

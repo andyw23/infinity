@@ -1,5 +1,5 @@
 import random
-import xml
+import logging
 
 from importer.components import Component
 from importer.samples import Sample
@@ -7,24 +7,24 @@ from importer.options import Option
 
 class Choice(Component):
     """Creates a Choice object"""
-    type = 'CHOICE'
+    component_type = 'CHOICE'
     elements_str = "./components/choose"
 
     def get_elements():
         return Component.get_elements(Choice.elements_str)
 
     def __init__(self, choice):
-        self.type = Choice.type
+        self.component_type = Choice.component_type
         self.id = choice.get("id").upper()
         self.add_options(choice.findall("./part"))
         if self.__has_no_options():
-            print("ERROR: Choice '{0}' has no parts".format(self.id))
+            logging.error("Choice '{0}' has no parts".format(self.id))
 
     def add_options(self, parts):
         """Add parts to the choice"""
         self.options = {}
         for part in parts:
-            par = Option(part)
+            par = Option(self, part)
             self.options[par.id] = par
 
     def __has_options(self):

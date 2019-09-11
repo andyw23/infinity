@@ -1,23 +1,21 @@
-from importer.components import Component
+from importer.components import *
 
 import xml.etree.ElementTree as ET
 
 
 class Sample(Component):
     """Creates a Sample object"""
-    type = 'SAMPLE'
+    component_type = 'SAMPLE'
     elements_str = "./components/sample"
 
     def get_elements():
         return Component.get_elements(Sample.elements_str)
 
     def __init__(self, sample):
-        self.type = Sample.type
+        self.component_type = Sample.component_type
         self.id = sample.get("id").upper()
         self.file = sample.get("file")
-        self.length = sample.get("length")
-        if self.id in ['DRUMMY', 'GONG KYZ', 'GIT SHIT 12']:
-            None
+        self.length = get_length_in_seconds(sample.get("length"))
         self.add_variants(sample.findall("./variant"))
 
     def add_variants(self, vars):
@@ -52,8 +50,8 @@ class Variant:
         self.id = variant.get("id").upper()
         self.loopcount = variant.get("loopcount", None)
         self.looplength = variant.get("looplength", None)
-        self.loopStartTime = variant.get("loopStartTime", None)
-        self.loopEndTime = variant.get("loopEndTime", None)
+        self.loopStartTime = get_length_in_seconds(self, variant.get("loopStartTime", None))
+        self.loopEndTime = get_length_in_seconds(self, variant.get("loopEndTime", None))
         self.add_dynamics(variant.findall("./dynamics"))
 
     def add_dynamics(self, dynamics):
