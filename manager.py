@@ -14,7 +14,9 @@ logging.basicConfig(
 # ^([^\[]+)(\[[\s\d]+])\s*(\w*)\s*-\s*(\S*)\s*-(.+)$
 from importer import *
 from importer.components import Component
+# from importer import components
 from interpreter.events import *
+from importer.scores import Score
 from utils.utils import print_format_pretty as pfp
 
 
@@ -30,10 +32,43 @@ def report():
         pfp("- " + typ + "S LOADED", Component.num_by_type(typ))
     print("------------------------------")
 
-current_score = scores.Score.get_random_score_events()
+
+def load_all_components():
+    """
+    Loads all of the Choose, Concert, Score and Sample components.
+    These then exist int he dictionary Component.components, with the IDs as the keys
+    :return: None
+    """
+    Component.load_type_objects(samples.Sample)
+    Component.load_type_objects(choices.Choice)
+    Component.load_type_objects(concerts.Concert)
+    Component.load_type_objects(scores.Score)
+
+
+def load_all_scores():
+    scores = Score.get_all_scores()
+    for score in scores:
+        print(unpack_concert_events(score.get_events()))
+
+def dump_score_events(sample_events):
+    """
+    prints out each individual event
+    :param sample_events: list - a list of events
+    """
+    for sample_event in sample_events:
+        print("-------------------------------------------")
+        pfp("SAMPLE", sample_event["SAMPLE"].id)
+        pfp("VARIANT", sample_event["VARIANT"].id)
+        pfp("TIME OFFSET", sample_event["TIME_OFFSET"])
+
+# Get the events associated with a randomly selected Score
+# current_score = scores.Score.get_random_score_events()
 # print(current_score)
-concert_events = unpack_concert_events(current_score)
+# concert_events = unpack_concert_events(current_score)
 
+load_all_components()
 report()
-
-print(concert_events)
+events = Score.get_random_score_events()
+# dump_score_events(events)
+unpack_concert_events(events)
+# print(concert_events)

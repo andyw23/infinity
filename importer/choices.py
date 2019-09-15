@@ -17,7 +17,7 @@ class Choice(Component):
         self.component_type = Choice.component_type
         self.id = choice.get("id").upper()
         self.add_options(choice.findall("./part"))
-        if self.__has_no_options():
+        if self._has_no_options():
             logging.error("Choice '{0}' has no parts".format(self.id))
 
     def add_options(self, parts):
@@ -27,32 +27,28 @@ class Choice(Component):
             par = Option(self, part)
             self.options[par.id] = par
 
-    def __has_options(self):
+    def _has_options(self):
         return (len(self.options) > 0)
 
-    def __has_no_options(self):
-        return (not self.__has_options())
+    def _has_no_options(self):
+        return (not self._has_options())
 
-    def __get_random_option(self):
+    def _get_random_option(self):
         return random.choice(list(self.options.values()))
 
-    def __get_option_object_by_id(self, option_id):
+    def _get_option_object_by_id(self, option_id):
         return Component.get_component_by_id(option_id)
 
-    def get_events(self, partoption=None):
+    def get_events(self, time_offset, variant_id):
         """
-        :param partoption: Option
+        :param partoption: Part or Option
+        :param time_offset: float
         :return: List
         """
         # choose at random between the available options
-        option = self.__get_random_option()
+        option = self._get_random_option()
         # get the component object indicated by the chosen option
-        obj = self.__get_option_object_by_id(option.id)
-        # play the object, passing on the option
-        return obj.get_events(option)
+        obj = self._get_option_object_by_id(option.id)
+        # play the object, passing on the option.variant_id
+        return [] + obj.get_events(time_offset, option.variant_id)
 
-
-"""
-LOAD ALL CHOICES
-"""
-Component.load_type_objects(Choice)

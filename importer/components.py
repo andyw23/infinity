@@ -19,6 +19,7 @@ class Component:
 
     Root class for component classes such as Score, Choose, Concert and Sample
     """
+
     # master dictionary of all component objects
     components = {}
     # names of the different types of components
@@ -97,16 +98,22 @@ class Component:
         if id in Component.components.keys():
             return Component.components[id]
         else:
-            logging.warning("{0}: Component '{1}' not found".format(dt.now(), id))
+            logging.warning("Component '{0}' not found".format(id))
             return None
 
     def get_option_from_element(owner, element):
         return Option(owner, element)
 
+    def add_time_offset_and_partoption(time_offset, partoption):
+        # NB. one may be expressed in seconds, the other in milliseconds
+        # return (time_offset + partoption.start)
+        return (time_offset + partoption.get_start_maybe_randomised())
 
-def get_length_in_seconds(owner=None, length_str=None):
+
+def get_time_value(owner=None, length_str=None):
     """
     Takes a string attribute and turns it into a tiem measure
+    :rtype: object
     :param length_str: a string representing a length of time
     :return: float - time in seconds, None if None is
     """
@@ -125,5 +132,4 @@ def get_length_in_seconds(owner=None, length_str=None):
         res += float(length_str)
         return res
     except ValueError:
-        logging.error("Time attribute '{0}', belonging to Object '{1}', Type '{2}' is ot a float".format(length_str, owner.id, owner.component_type))
-
+        logging.error("Time attribute '{0}', belonging to {1}: {2}, is not a float".format(length_str, owner.component_type, owner.id))
