@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://www.w3schools.com"
+        xmlns="https://www.w3schools.com"
+        elementFormDefault="qualified">
+
+    <xs:element name="program">
+        <xs:complexType>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="xmlns" type="xs:string" use="required"/>
+            <xs:attribute name="xmlns:xsi" type="xs:string" use="required"/>
+            <xs:attribute name="xsi:schemaLocation" type="xs:string" use="required"/>
+            <xs:sequence>
+                <xs:element name="components">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sample" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                    <xs:attribute name="file" type="xs:string" use="required"/>
+                                    <xs:attribute name="length" type="xs:string" use="required"/>
+                                    <xs:sequence>
+                                        <xs:element name="variant"
+                                                    maxOccurs="unbounded"
+                                                    minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:attribute name="id"
+                                                              type="xs:string"
+                                                              use="required"/>
+                                                <xs:sequence>
+                                                    <xs:element name="loopcount"
+                                                                type="xs:int"/>
+                                                    <xs:element name="loopstarttime"
+                                                                type="xs:string"/>
+                                                    <xs:element name="loopendtime"
+                                                                type="xs:int"/>
+                                                    <xs:element name="looplength"
+                                                                type="xs:string"/>
+                                                    <xs:element name="dynamics"
+                                                                maxOccurs="unbounded"
+                                                                minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="instruction"
+                                                                            maxOccurs="unbounded"
+                                                                            minOccurs="1">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="time"
+                                                                                      type="xs:string"
+                                                                                      use="optional"/>
+                                                                        <xs:attribute name="level"
+                                                                                      type="xs:int"
+                                                                                      use="optional" default="0">
+                                                                            <xs:simpleType>
+                                                                                <xs:restriction base="xs:int">
+                                                                                    <xs:minInclusive value="0"/>
+                                                                                    <xs:maxInclusive value="255"/>
+                                                                                </xs:restriction>
+                                                                            </xs:simpleType>
+                                                                        </xs:attribute>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="concert" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id" use="required"/>
+                                    <xs:sequence>
+                                        <xs:element name="part" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="id" use="required"/>
+                                                <xs:attribute name="variant" use="optional"/>
+                                                <xs:attribute name="start" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="choose" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id" use="required"/>
+                                    <xs:sequence>
+                                        <xs:element name="part" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="id" use="required"/>
+                                                <xs:attribute name="variant" use="optional"/>
+                                                <xs:attribute name="start" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="scores" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="score" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id" use="required"/>
+                                    <xs:sequence>
+                                        <xs:element name="create" maxOccurs="1">
+                                            <xs:complexType>
+                                                <xs:attribute name="id" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
