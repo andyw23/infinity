@@ -72,3 +72,15 @@ events = Score.get_random_score_events()
 # dump_score_events(events)
 unpack_concert_events(events)
 # print(concert_events)
+
+
+def load_score_text():
+    import re
+
+    f = open("scores.xml", "r")
+    src_xml = f.read()
+    f.close()
+    # print(src_xml)
+    src_xml = re.sub("")
+
+load_score_text()
