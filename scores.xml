@@ -1,29 +1,8 @@
-<program name="Tim 16">
+<?xml version="1.0"?>
+
+<program name="Tim 16" xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com scores.xsd">
     <components>
         <sample id="A" file="A01" length="25.2130">
-            <!--variant id="example" -->
-            <!-- start time within the sample, in mS -->
-            <!-- startTime>10</startTime -->
-            <!-- end time within the sample, in mS -->
-            <!-- endTime>90</endTime -->
-            <!-- shows possible sample control properties -->
-            <!-- loopCount. 0 = infinite (until looplength) -->
-            <!-- otherwise, sample plays for n * sample.length -->
-            <!-- loopcount>0</loopcount -->
-            <!-- looplength. when to end an infinite loop. in mins:secs  -->
-            <!-- looplength>2:00</looplength -->
-            <!-- loop start time within the sample, in mS -->
-            <!-- loopStartTime>100</loopStartTime -->
-            <!-- loop end time within the sample, in mS -->
-            <!-- loopEndTime>2000</loopEndTime -->
-            <!-- dynamics instructions. values are 0-255. time is in mins:secs -->
-            <!-- dynamics -->
-            <!-- instruction time="0" level="150"/ -->
-            <!-- instruction time="1:00" level="150"/ -->
-            <!-- nb. level will fade between these two values -->
-            <!-- instruction time="2:00" level="200"/ -->
-            <!-- /dynamics -->
-            <!-- /variant-->
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -31,8 +10,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>0</startTime>
-                <endTime>10000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>10000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="200"/>
                 </dynamics>
@@ -40,10 +19,10 @@
         </sample>
         <sample id="altai dopsh" file="altai dopsh" length="81.4400">
             <variant id="1">
+                <loopstarttime>12899</loopstarttime>
+                <loopendtime>81420</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>2:20</looplength>
-                <loopStartTime>12899</loopStartTime>
-                <loopEndTime>81420</loopEndTime>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.10" level="100"/>
@@ -52,10 +31,10 @@
                 </dynamics>
             </variant>
             <variant id="2">
+                <loopstarttime>12899</loopstarttime>
+                <loopendtime>81420</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>1:30</looplength>
-                <loopStartTime>12899</loopStartTime>
-                <loopEndTime>81420</loopEndTime>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.15" level="100"/>
@@ -64,8 +43,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>26000</startTime>
-                <endTime>50000</endTime>
+                <loopstarttime>26000</loopstarttime>
+                <loopendtime>50000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>1:45</looplength>
                 <dynamics>
@@ -91,8 +70,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>0</startTime>
-                <endTime>50000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>50000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="96"/>
                     <instruction time="0.30" level="96"/>
@@ -116,14 +95,14 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>612500</startTime>
+                <loopstarttime>612500</loopstarttime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>0</startTime>
-                <endTime>609000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>609000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="255"/>
                     <instruction time="0.49" level="255"/>
@@ -145,32 +124,32 @@
                 </dynamics>
             </variant>
             <variant id="breath">
-                <startTime>107000</startTime>
-                <endTime>114000</endTime>
+                <loopstarttime>107000</loopstarttime>
+                <loopendtime>114000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
                 </dynamics>
             </variant>
             <variant id="cello">
-                <startTime>129100</startTime>
-                <endTime>230000</endTime>
+                <loopstarttime>129100</loopstarttime>
+                <loopendtime>230000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="255"/>
                 </dynamics>
             </variant>
             <variant id="cello 2">
-                <startTime>174500</startTime>
-                <endTime>230000</endTime>
+                <loopstarttime>174500</loopstarttime>
+                <loopendtime>230000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="255"/>
                 </dynamics>
             </variant>
             <variant id="ken vox">
-                <startTime>82000</startTime>
-                <endTime>115500</endTime>
+                <loopstarttime>82000</loopstarttime>
+                <loopendtime>115500</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>3:40</looplength>
                 <dynamics>
@@ -178,8 +157,8 @@
                 </dynamics>
             </variant>
             <variant id="ken solo">
-                <startTime>59000</startTime>
-                <endTime>132000</endTime>
+                <loopstarttime>59000</loopstarttime>
+                <loopendtime>132000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -188,32 +167,32 @@
                 </dynamics>
             </variant>
             <variant id="oc solo">
-                <startTime>4000</startTime>
-                <endTime>57000</endTime>
+                <loopstarttime>4000</loopstarttime>
+                <loopendtime>57000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
                 </dynamics>
             </variant>
             <variant id="dung">
-                <startTime>341000</startTime>
-                <endTime>347000</endTime>
+                <loopstarttime>341000</loopstarttime>
+                <loopendtime>347000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="190"/>
                 </dynamics>
             </variant>
             <variant id="split 1">
-                <startTime>0</startTime>
-                <endTime>58000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>58000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
                 </dynamics>
             </variant>
             <variant id="split 2">
-                <startTime>59000</startTime>
-                <endTime>112500</endTime>
+                <loopstarttime>59000</loopstarttime>
+                <loopendtime>112500</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -222,16 +201,16 @@
                 </dynamics>
             </variant>
             <variant id="split 3">
-                <startTime>111000</startTime>
-                <endTime>230000</endTime>
+                <loopstarttime>111000</loopstarttime>
+                <loopendtime>230000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
                 </dynamics>
             </variant>
             <variant id="split 4">
-                <startTime>236500</startTime>
-                <endTime>427000</endTime>
+                <loopstarttime>236500</loopstarttime>
+                <loopendtime>427000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -243,8 +222,8 @@
                 </dynamics>
             </variant>
             <variant id="split 5">
-                <startTime>443000</startTime>
-                <endTime>555000</endTime>
+                <loopstarttime>443000</loopstarttime>
+                <loopendtime>555000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -253,8 +232,8 @@
                 </dynamics>
             </variant>
             <variant id="split 6">
-                <startTime>554000</startTime>
-                <endTime>638000</endTime>
+                <loopstarttime>554000</loopstarttime>
+                <loopendtime>638000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -264,16 +243,16 @@
                 </dynamics>
             </variant>
             <variant id="ken folk">
-                <startTime>966000</startTime>
-                <endTime>982000</endTime>
+                <loopstarttime>966000</loopstarttime>
+                <loopendtime>982000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
                 </dynamics>
             </variant>
             <variant id="split 7">
-                <startTime>642000</startTime>
-                <endTime>729000</endTime>
+                <loopstarttime>642000</loopstarttime>
+                <loopendtime>729000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -283,8 +262,8 @@
                 </dynamics>
             </variant>
             <variant id="split 8">
-                <startTime>814000</startTime>
-                <endTime>916000</endTime>
+                <loopstarttime>814000</loopstarttime>
+                <loopendtime>916000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -293,8 +272,8 @@
                 </dynamics>
             </variant>
             <variant id="split 9">
-                <startTime>708000</startTime>
-                <endTime>858300</endTime>
+                <loopstarttime>708000</loopstarttime>
+                <loopendtime>858300</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -304,10 +283,10 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="BAS 3b" file="BAS 3b">
+        <sample id="BAS 3b" file="BAS 3b" length="20:15.529">
             <variant id="1">
-                <startTime>0</startTime>
-                <endTime>30000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>30000</loopendtime>
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="200"/>
@@ -387,9 +366,9 @@
                 </dynamics>
             </variant>
             <variant id="2">
+                <loopstarttime>300</loopstarttime>
+                <loopendtime>14000</loopendtime>
                 <loopcount>2</loopcount>
-                <loopStartTime>300</loopStartTime>
-                <loopEndTime>14000</loopEndTime>
                 <dynamics>
                     <instruction time="0" level="250"/>
                     <instruction time="0.20" level="250"/>
@@ -405,19 +384,19 @@
                 </dynamics>
             </variant>
             <variant id="2">
+                <loopstarttime>1150</loopstarttime>
+                <loopendtime>1200</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:09</looplength>
-                <loopStartTime>1150</loopStartTime>
-                <loopEndTime>1200</loopEndTime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                 </dynamics>
             </variant>
             <variant id="3">
+                <loopstarttime>1150</loopstarttime>
+                <loopendtime>1165</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:06</looplength>
-                <loopStartTime>1150</loopStartTime>
-                <loopEndTime>1165</loopEndTime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                 </dynamics>
@@ -441,7 +420,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="conch" file="conch">
+        <sample id="conch" file="conch" length="4.963">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -498,8 +477,8 @@
                 </dynamics>
             </variant>
             <variant id="bells">
-                <startTime>30000</startTime>
-                <endTime>39000</endTime>
+                <loopstarttime>30000</loopstarttime>
+                <loopendtime>39000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>2.30</looplength>
                 <dynamics>
@@ -510,8 +489,8 @@
                 </dynamics>
             </variant>
             <variant id="bells 2">
-                <startTime>30000</startTime>
-                <endTime>39000</endTime>
+                <loopstarttime>30000</loopstarttime>
+                <loopendtime>39000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>1.40</looplength>
                 <dynamics>
@@ -522,8 +501,8 @@
                 </dynamics>
             </variant>
             <variant id="bells 3">
-                <startTime>30000</startTime>
-                <endTime>39000</endTime>
+                <loopstarttime>30000</loopstarttime>
+                <loopendtime>39000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>1.15</looplength>
                 <dynamics>
@@ -534,8 +513,8 @@
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>180000</startTime>
-                <endTime>330000</endTime>
+                <loopstarttime>180000</loopstarttime>
+                <loopendtime>330000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.20" level="180"/>
@@ -554,10 +533,10 @@
         </sample>
         <sample id="deep infinity" file="deep infinity" length="60.0000">
             <variant id="1">
+                <loopstarttime>34787</loopstarttime>
+                <loopendtime>59575</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>3.40</looplength>
-                <loopStartTime>34787</loopStartTime>
-                <loopEndTime>59575</loopEndTime>
                 <dynamics>
                     <instruction time="0" level="255"/>
                     <instruction time="0.20" level="10"/>
@@ -568,8 +547,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>34787</startTime>
-                <endTime>59575</endTime>
+                <loopstarttime>34787</loopstarttime>
+                <loopendtime>59575</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0.30</looplength>
                 <dynamics>
@@ -649,10 +628,10 @@
                 </dynamics>
             </variant>
             <variant id="2">
+                <loopstarttime>24148</loopstarttime>
+                <loopendtime>26171</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>1:27</looplength>
-                <loopStartTime>24148</loopStartTime>
-                <loopEndTime>26171</loopEndTime>
                 <dynamics>
                     <instruction time="0" level="100"/>
                 </dynamics>
@@ -798,8 +777,8 @@
         </sample>
         <sample id="echo drone" file="echo drone" length="300.2430">
             <variant id="1">
-                <startTime>7000</startTime>
-                <endTime>157000</endTime>
+                <loopstarttime>7000</loopstarttime>
+                <loopendtime>157000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="60"/>
                     <instruction time="1.00" level="100"/>
@@ -808,8 +787,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>7000</startTime>
-                <endTime>137000</endTime>
+                <loopstarttime>7000</loopstarttime>
+                <loopendtime>137000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="200"/>
                     <instruction time="1.45" level="200"/>
@@ -848,7 +827,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="G1" file="g01">
+        <sample id="G1" file="g01" length="1:08.519">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="255"/>
@@ -891,16 +870,16 @@
                 </dynamics>
             </variant>
             <variant id="loop">
-                <startTime>45538</startTime>
-                <endTime>54831</endTime>
+                <loopstarttime>45538</loopstarttime>
+                <loopendtime>54831</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="255"/>
                 </dynamics>
             </variant>
             <variant id="hit">
-                <startTime>20889</startTime>
-                <endTime>22099</endTime>
+                <loopstarttime>20889</loopstarttime>
+                <loopendtime>22099</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>4.00</looplength>
                 <dynamics>
@@ -908,8 +887,8 @@
                 </dynamics>
             </variant>
             <variant id="hit2">
-                <startTime>20889</startTime>
-                <endTime>22099</endTime>
+                <loopstarttime>20889</loopstarttime>
+                <loopendtime>22099</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0.43</looplength>
                 <dynamics>
@@ -918,8 +897,8 @@
                 </dynamics>
             </variant>
             <variant id="hit3">
-                <startTime>20889</startTime>
-                <endTime>22099</endTime>
+                <loopstarttime>20889</loopstarttime>
+                <loopendtime>22099</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0.12</looplength>
                 <dynamics>
@@ -927,8 +906,8 @@
                 </dynamics>
             </variant>
             <variant id="hit4">
-                <startTime>20889</startTime>
-                <endTime>22099</endTime>
+                <loopstarttime>20889</loopstarttime>
+                <loopendtime>22099</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0.04</looplength>
                 <dynamics>
@@ -936,8 +915,8 @@
                 </dynamics>
             </variant>
             <variant id="hit5">
-                <startTime>20889</startTime>
-                <endTime>22099</endTime>
+                <loopstarttime>20889</loopstarttime>
+                <loopendtime>22099</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0.43</looplength>
                 <dynamics>
@@ -945,8 +924,8 @@
                 </dynamics>
             </variant>
             <variant id="hit6">
-                <startTime>20889</startTime>
-                <endTime>22099</endTime>
+                <loopstarttime>20889</loopstarttime>
+                <loopendtime>22099</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0.12</looplength>
                 <dynamics>
@@ -954,8 +933,8 @@
                 </dynamics>
             </variant>
             <variant id="hit7">
-                <startTime>20889</startTime>
-                <endTime>22099</endTime>
+                <loopstarttime>20889</loopstarttime>
+                <loopendtime>22099</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0.04</looplength>
                 <dynamics>
@@ -1057,8 +1036,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>12039</startTime>
-                <endTime>32000</endTime>
+                <loopstarttime>12039</loopstarttime>
+                <loopendtime>32000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="250"/>
                     <instruction time="0.19" level="0"/>
@@ -1204,7 +1183,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="GPad 1" file="GPad 1">
+        <sample id="GPad 1" file="GPad 1" length="21:22.873">
             <variant id="1">
                 <loopcount>1</loopcount>
                 <dynamics>
@@ -1255,14 +1234,6 @@
                 </dynamics>
             </variant>
         </sample>
-        <!--sample id="hyperslo end" file="hyperslo end">
-			<variant id="1">
-				<loopcount>1</loopcount>
-				<dynamics>
-					<instruction time="0" level="250"/>
-				</dynamics>
-			</variant>
-		</sample-->
         <sample id="hypo end" file="hypo end" length="76.3530">
             <variant id="1">
                 <loopcount>1</loopcount>
@@ -1305,8 +1276,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>0</startTime>
-                <endTime>1000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>1000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="100"/>
                 </dynamics>
@@ -1324,22 +1295,22 @@
                 </dynamics>
             </variant>
             <variant id="frag 1">
-                <startTime>0</startTime>
-                <endTime>5000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>5000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="60"/>
                 </dynamics>
             </variant>
             <variant id="frag 2">
-                <startTime>5000</startTime>
-                <endTime>15000</endTime>
+                <loopstarttime>5000</loopstarttime>
+                <loopendtime>15000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="85"/>
                 </dynamics>
             </variant>
             <variant id="frag 3">
-                <startTime>17000</startTime>
-                <endTime>31000</endTime>
+                <loopstarttime>17000</loopstarttime>
+                <loopendtime>31000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="120"/>
                 </dynamics>
@@ -1488,8 +1459,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>14000</startTime>
-                <endTime>46000</endTime>
+                <loopstarttime>14000</loopstarttime>
+                <loopendtime>46000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:24</looplength>
                 <dynamics>
@@ -1498,8 +1469,8 @@
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>14000</startTime>
-                <endTime>46000</endTime>
+                <loopstarttime>14000</loopstarttime>
+                <loopendtime>46000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:07</looplength>
                 <dynamics>
@@ -1508,8 +1479,8 @@
                 </dynamics>
             </variant>
             <variant id="5">
-                <startTime>14000</startTime>
-                <endTime>46000</endTime>
+                <loopstarttime>14000</loopstarttime>
+                <loopendtime>46000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:02</looplength>
                 <dynamics>
@@ -1517,8 +1488,8 @@
                 </dynamics>
             </variant>
             <variant id="6">
-                <startTime>14000</startTime>
-                <endTime>46000</endTime>
+                <loopstarttime>14000</loopstarttime>
+                <loopendtime>46000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:24</looplength>
                 <dynamics>
@@ -1526,8 +1497,8 @@
                 </dynamics>
             </variant>
             <variant id="7">
-                <startTime>14000</startTime>
-                <endTime>46000</endTime>
+                <loopstarttime>14000</loopstarttime>
+                <loopendtime>46000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:07</looplength>
                 <dynamics>
@@ -1535,8 +1506,8 @@
                 </dynamics>
             </variant>
             <variant id="8">
-                <startTime>14000</startTime>
-                <endTime>46000</endTime>
+                <loopstarttime>14000</loopstarttime>
+                <loopendtime>46000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:02</looplength>
                 <dynamics>
@@ -1544,14 +1515,14 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg deep e1" file="karg deep e1">
+        <sample id="karg deep e1" file="karg deep e1" length="1:28.424">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg e 1" file="karg e 1">
+        <sample id="karg e 1" file="karg e 1" length="1:33.857">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="90"/>
@@ -1572,14 +1543,14 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg g" file="karg g">
+        <sample id="karg g" file="karg g" length="2:49.560">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="90"/>
                 </dynamics>
             </variant>
         </sample>
-        <sample id="karg hi fg" file="karg hi fg">
+        <sample id="karg hi fg" file="karg hi fg" length="1:15.467">
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="90"/>
@@ -1600,7 +1571,6 @@
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>5:20</looplength>
-                <looplength>5:20</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.20" level="50"/>
@@ -1620,8 +1590,8 @@
         </sample>
         <sample id="Ken 1" file="Ken 1" length="593.9460">
             <variant id="1">
-                <startTime>0</startTime>
-                <endTime>160000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>160000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="50"/>
                     <instruction time="2.00" level="50"/>
@@ -1629,15 +1599,15 @@
                 </dynamics>
             </variant>
             <variant id="1b">
-                <startTime>0</startTime>
-                <endTime>112000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>112000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="50"/>
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>0</startTime>
-                <endTime>160000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>160000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                     <instruction time="2.15" level="180"/>
@@ -1645,26 +1615,25 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>0</startTime>
-                <endTime>33000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>33000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                 </dynamics>
             </variant>
             <variant id="late">
-                <startTime>421000</startTime>
-                <endTime>430000</endTime>
+                <loopstarttime>421000</loopstarttime>
+                <loopendtime>430000</loopendtime>
                 <loopcount>0</loopcount>
-                <loopEndTime>430000</loopEndTime>
-                <dynamics>
+\                <dynamics>
                     <instruction time="0" level="255"/>
                 </dynamics>
             </variant>
         </sample>
         <sample id="Ken 2" file="Ken 2" length="141.9490">
             <variant id="1">
-                <startTime>0</startTime>
-                <endTime>140000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>140000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="50"/>
                     <instruction time="1.55" level="50"/>
@@ -1672,15 +1641,15 @@
                 </dynamics>
             </variant>
             <variant id="1b">
-                <startTime>0</startTime>
-                <endTime>112000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>112000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="50"/>
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>0</startTime>
-                <endTime>140000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>140000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                     <instruction time="1.55" level="180"/>
@@ -1688,8 +1657,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>0</startTime>
-                <endTime>134000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>134000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="100"/>
                 </dynamics>
@@ -1697,8 +1666,8 @@
         </sample>
         <sample id="Ken 3" file="Ken 3" length="269.3170">
             <variant id="1">
-                <startTime>0</startTime>
-                <endTime>160000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>160000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                     <instruction time="2.10" level="180"/>
@@ -1706,8 +1675,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>0</startTime>
-                <endTime>240000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>240000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="100"/>
                 </dynamics>
@@ -1723,8 +1692,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>0</startTime>
-                <endTime>78000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>78000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -1733,16 +1702,16 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>117000</startTime>
-                <endTime>120000</endTime>
+                <loopstarttime>117000</loopstarttime>
+                <loopendtime>120000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>0</startTime>
-                <endTime>58000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>58000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -1751,8 +1720,8 @@
         </sample>
         <sample id="klarnup" file="klarnup" length="64.6380">
             <variant id="1">
-                <startTime>28199</startTime>
-                <endTime>52919</endTime>
+                <loopstarttime>28199</loopstarttime>
+                <loopendtime>52919</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>1:05</looplength>
                 <dynamics>
@@ -1763,8 +1732,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>28199</startTime>
-                <endTime>52919</endTime>
+                <loopstarttime>28199</loopstarttime>
+                <loopendtime>52919</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:16</looplength>
                 <dynamics>
@@ -1811,7 +1780,7 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="Lisa 2" file="Frag 2">
+        <sample id="Lisa 2" file="Frag 2" length="49.057">
             <variant id="1">
                 <loopcount>2</loopcount>
                 <dynamics>
@@ -1827,8 +1796,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>12000</startTime>
-                <endTime>14000</endTime>
+                <loopstarttime>12000</loopstarttime>
+                <loopendtime>14000</loopendtime>
                 <loopcount>7</loopcount>
                 <dynamics>
                     <instruction time="0" level="150"/>
@@ -1836,8 +1805,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>13000</startTime>
-                <endTime>15000</endTime>
+                <loopstarttime>13000</loopstarttime>
+                <loopendtime>15000</loopendtime>
                 <loopcount>7</loopcount>
                 <dynamics>
                     <instruction time="0" level="150"/>
@@ -1847,8 +1816,8 @@
         </sample>
         <sample id="Lisa 4" file="Frag 4" length="73.0000">
             <variant id="1">
-                <startTime>16000</startTime>
-                <endTime>60000</endTime>
+                <loopstarttime>16000</loopstarttime>
+                <loopendtime>60000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -1857,8 +1826,8 @@
         </sample>
         <sample id="loud beat" file="loud beat" length="28.9140">
             <variant id="1">
-                <startTime>6279</startTime>
-                <endTime>29133</endTime>
+                <loopstarttime>6279</loopstarttime>
+                <loopendtime>29133</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>1:37</looplength>
                 <dynamics>
@@ -1868,8 +1837,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>6279</startTime>
-                <endTime>29133</endTime>
+                <loopstarttime>6279</loopstarttime>
+                <loopendtime>29133</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:18</looplength>
                 <dynamics>
@@ -1878,8 +1847,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>6279</startTime>
-                <endTime>29133</endTime>
+                <loopstarttime>6279</loopstarttime>
+                <loopendtime>29133</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:05</looplength>
                 <dynamics>
@@ -1888,8 +1857,8 @@
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>6279</startTime>
-                <endTime>29133</endTime>
+                <loopstarttime>6279</loopstarttime>
+                <loopendtime>29133</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:01</looplength>
                 <dynamics>
@@ -1897,8 +1866,8 @@
                 </dynamics>
             </variant>
             <variant id="5">
-                <startTime>6279</startTime>
-                <endTime>29133</endTime>
+                <loopstarttime>6279</loopstarttime>
+                <loopendtime>29133</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:18</looplength>
                 <dynamics>
@@ -1906,8 +1875,8 @@
                 </dynamics>
             </variant>
             <variant id="6">
-                <startTime>6279</startTime>
-                <endTime>29133</endTime>
+                <loopstarttime>6279</loopstarttime>
+                <loopendtime>29133</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:05</looplength>
                 <dynamics>
@@ -1916,8 +1885,8 @@
                 </dynamics>
             </variant>
             <variant id="7">
-                <startTime>6279</startTime>
-                <endTime>29133</endTime>
+                <loopstarttime>6279</loopstarttime>
+                <loopendtime>29133</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>0:01</looplength>
                 <dynamics>
@@ -2070,8 +2039,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>32000</startTime>
-                <endTime>41000</endTime>
+                <loopstarttime>32000</loopstarttime>
+                <loopendtime>41000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
@@ -2102,12 +2071,12 @@
                 </dynamics>
             </variant>
         </sample>
-        <sample id="PB 3" file="PB snare 3">
+        <sample id="PB 3" file="PB snare 3" length="44.146">
             <variant id="1">
                 <loopcount>8</loopcount>
                 <looplength>1:00</looplength>
-                <loopStartTime>500</loopStartTime>
-                <loopEndTime>2600</loopEndTime>
+                <loopstarttime>500</loopstarttime>
+                <loopendtime>2600</loopendtime>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.12" level="225"/>
@@ -2428,8 +2397,8 @@
         </sample>
         <sample id="R 1" file="R 1" length="231.7320">
             <variant id="1">
-                <startTime>0</startTime>
-                <endTime>160000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>160000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -2438,8 +2407,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>81000</startTime>
-                <endTime>147000</endTime>
+                <loopstarttime>81000</loopstarttime>
+                <loopendtime>147000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -2462,8 +2431,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>0</startTime>
-                <endTime>50000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>50000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                     <instruction time="0.35" level="180"/>
@@ -2471,8 +2440,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>0</startTime>
-                <endTime>13000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>13000</loopendtime>
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -2481,8 +2450,8 @@
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>85000</startTime>
-                <endTime>130000</endTime>
+                <loopstarttime>85000</loopstarttime>
+                <loopendtime>130000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2494,8 +2463,8 @@
         </sample>
         <sample id="rock ock" file="rock ock" length="298.0000">
             <variant id="1">
-                <startTime>22000</startTime>
-                <endTime>113000</endTime>
+                <loopstarttime>22000</loopstarttime>
+                <loopendtime>113000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="250"/>
                     <instruction time="1.20" level="250"/>
@@ -2525,8 +2494,8 @@
         </sample>
         <sample id="SIL 6.3" file="SIL 6.3" length="625.1100">
             <variant id="1">
-                <startTime>0</startTime>
-                <endTime>13000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>13000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -2535,8 +2504,8 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>0</startTime>
-                <endTime>120000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>120000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2546,8 +2515,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>0</startTime>
-                <endTime>600000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>600000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2557,8 +2526,8 @@
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>0</startTime>
-                <endTime>216000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>216000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2568,8 +2537,8 @@
                 </dynamics>
             </variant>
             <variant id="5">
-                <startTime>0</startTime>
-                <endTime>150000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>150000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2582,7 +2551,7 @@
         </sample>
         <sample id="SIL 6.4" file="SIL 6.4" length="211.5220">
             <variant id="1">
-                <startTime>40000</startTime>
+                <loopstarttime>40000</loopstarttime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2592,7 +2561,7 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>40100</startTime>
+                <loopstarttime>40100</loopstarttime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2602,7 +2571,7 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>54000</startTime>
+                <loopstarttime>54000</loopstarttime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2610,8 +2579,8 @@
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>54000</startTime>
-                <endTime>84000</endTime>
+                <loopstarttime>54000</loopstarttime>
+                <loopendtime>84000</loopendtime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2620,7 +2589,7 @@
                 </dynamics>
             </variant>
             <variant id="5">
-                <startTime>95000</startTime>
+                <loopstarttime>95000</loopstarttime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2630,7 +2599,7 @@
                 </dynamics>
             </variant>
             <variant id="5b">
-                <startTime>95100</startTime>
+                <loopstarttime>95100</loopstarttime>
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
@@ -2640,8 +2609,8 @@
                 </dynamics>
             </variant>
             <variant id="6">
-                <startTime>208278</startTime>
-                <endTime>211762</endTime>
+                <loopstarttime>208278</loopstarttime>
+                <loopendtime>211762</loopendtime>
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
@@ -2651,8 +2620,8 @@
         </sample>
         <sample id="skywatermoon" file="skywatermoon" length="1332.2030">
             <variant id="1">
-                <startTime>0</startTime>
-                <endTime>120000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>120000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
                     <instruction time="1.35" level="180"/>
@@ -2660,15 +2629,15 @@
                 </dynamics>
             </variant>
             <variant id="2">
-                <startTime>13760</startTime>
-                <endTime>15650</endTime>
+                <loopstarttime>13760</loopstarttime>
+                <loopendtime>15650</loopendtime>
                 <dynamics>
                     <instruction time="0" level="250"/>
                 </dynamics>
             </variant>
             <variant id="quiet">
-                <startTime>272000</startTime>
-                <endTime>360000</endTime>
+                <loopstarttime>272000</loopstarttime>
+                <loopendtime>360000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>2:20</looplength>
                 <dynamics>
@@ -2678,8 +2647,8 @@
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>0</startTime>
-                <endTime>600000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>600000</loopendtime>
                 >
                 <dynamics>
                     <instruction time="0" level="30"/>
@@ -2739,8 +2708,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>15000</startTime>
-                <endTime>77000</endTime>
+                <loopstarttime>15000</loopstarttime>
+                <loopendtime>77000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>4:00</looplength>
                 <dynamics>
@@ -2750,8 +2719,8 @@
                 </dynamics>
             </variant>
             <variant id="4">
-                <startTime>15000</startTime>
-                <endTime>77000</endTime>
+                <loopstarttime>15000</loopstarttime>
+                <loopendtime>77000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>3:45</looplength>
                 <dynamics>
@@ -2761,8 +2730,8 @@
                 </dynamics>
             </variant>
             <variant id="5">
-                <startTime>15000</startTime>
-                <endTime>77000</endTime>
+                <loopstarttime>15000</loopstarttime>
+                <loopendtime>77000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>3:30</looplength>
                 <dynamics>
@@ -2772,8 +2741,8 @@
                 </dynamics>
             </variant>
             <variant id="6">
-                <startTime>15000</startTime>
-                <endTime>77000</endTime>
+                <loopstarttime>15000</loopstarttime>
+                <loopendtime>77000</loopendtime>
                 <loopcount>0</loopcount>
                 <looplength>3:15</looplength>
                 <dynamics>
@@ -2783,8 +2752,8 @@
                 </dynamics>
             </variant>
             <variant id="7">
-                <startTime>0</startTime>
-                <endTime>81000</endTime>
+                <loopstarttime>0</loopstarttime>
+                <loopendtime>81000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="160"/>
                     <instruction time="1.06" level="150"/>
@@ -2868,8 +2837,8 @@
             <variant id="1">
                 <loopcount>0</loopcount>
                 <looplength>5:20</looplength>
-                <loopStartTime>38</loopStartTime>
-                <loopEndTime>4960</loopEndTime>
+                <loopstarttime>38</loopstarttime>
+                <loopendtime>4960</loopendtime>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.20" level="50"/>
@@ -2880,8 +2849,8 @@
             <variant id="2">
                 <loopcount>0</loopcount>
                 <looplength>3:50</looplength>
-                <loopStartTime>38</loopStartTime>
-                <loopEndTime>4960</loopEndTime>
+                <loopstarttime>38</loopstarttime>
+                <loopendtime>4960</loopendtime>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.20" level="50"/>
@@ -2917,8 +2886,8 @@
                 </dynamics>
             </variant>
             <variant id="3">
-                <startTime>254261</startTime>
-                <endTime>260127</endTime>
+                <loopstarttime>254261</loopstarttime>
+                <loopendtime>260127</loopendtime>
                 <dynamics>
                     <instruction time="0" level="255"/>
                 </dynamics>
@@ -2962,8 +2931,8 @@
         <sample id="voice 2 stereo smeazed" file="voice 2 stereo smeazed" length="16.0000">
             <variant id="1">
                 <loopcount>5</loopcount>
-                <loopStartTime>4050</loopStartTime>
-                <loopEndTime>13000</loopEndTime>
+                <loopstarttime>4050</loopstarttime>
+                <loopendtime>13000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="75"/>
                 </dynamics>
@@ -2990,52 +2959,52 @@
             <part id="sixth choice" start="0"/>
         </concert>
         <concert id="1a0">
-            <part id="git scrape" start="1.1"/>
+            <part id="git scrape" start="1.30"/>
         </concert>
         <concert id="1a7">
-            <part id="beat w stuff" start="0.25"/>
+            <part id="beat w stuff" start="0.25*"/>
         </concert>
         <concert id="1a8">
-            <part id="git shit 13" start="1.40"/>
+            <part id="git shit 13" start="1.40*"/>
         </concert>
         <concert id="1a12">
-            <part id="GKT rev" start="0.20"/>
+            <part id="GKT rev" start="0.20*"/>
         </concert>
         <concert id="1a14">
-            <part id="dung ken 2" start="1.58"/>
+            <part id="dung ken 2" start="1.58*"/>
         </concert>
         <concert id="1b0">
-            <part id="Bells down" start="0.10"/>
+            <part id="Bells down" start="0.10*"/>
         </concert>
         <concert id="1b1">
-            <part id="dung ken 2" start="1.58"/>
+            <part id="dung ken 2" start="1.58*"/>
         </concert>
         <concert id="1b7">
-            <part id="more git shit 6" start="0.14"/>
+            <part id="more git shit 6" start="0.14*"/>
         </concert>
         <concert id="1b7.20">
-            <part id="git scrape" start="1.10"/>
+            <part id="git scrape" start="1.10*"/>
         </concert>
         <concert id="1b14">
-            <part id="gendos house chad 1" start="0.40"/>
+            <part id="gendos house chad 1" start="0.40*"/>
         </concert>
         <concert id="1b16">
-            <part id="git shit 13" start="1.40"/>
+            <part id="git shit 13" start="1.40*"/>
         </concert>
         <concert id="1c0">
-            <part id="git shit 13" start="1.40"/>
+            <part id="git shit 13" start="1.40*"/>
         </concert>
         <concert id="1c4">
-            <part id="echo drone" start="0.25"/>
+            <part id="echo drone" start="0.25*"/>
         </concert>
         <concert id="1c7">
-            <part id="deep infinity" variant="3" start="0.58"/>
+            <part id="deep infinity" variant="3" start="0.58*"/>
         </concert>
         <concert id="1c9">
-            <part id="dung ken 2" start="0.58"/>
+            <part id="dung ken 2" start="0.58*"/>
         </concert>
         <concert id="1c14">
-            <part id="git scrape" start="0.35"/>
+            <part id="git scrape" start="0.35*"/>
         </concert>
         <concert id="1A">
             <part id="1a0" start="0"/>
@@ -3060,52 +3029,52 @@
             <part id="1c14" start="14.00"/>
         </concert>
         <concert id="2a0">
-            <part id="Klarnbreath" variant="2" start="0.40"/>
+            <part id="Klarnbreath" variant="2" start="0.40*"/>
         </concert>
         <concert id="2a2">
-            <part id="tibetloop down" start="2.05"/>
+            <part id="tibetloop down" start="2.05*"/>
         </concert>
         <concert id="2a9.30">
-            <part id="more git shit 7" start="0.15"/>
+            <part id="more git shit 7" start="0.15*"/>
         </concert>
         <concert id="2a10">
-            <part id="Ken 3" start="1.15"/>
+            <part id="Ken 3" start="1.15*"/>
         </concert>
         <concert id="2a14">
-            <part id="hypo end" start="0.40"/>
+            <part id="hypo end" start="0.40*"/>
         </concert>
         <concert id="2a16">
-            <part id="karg e" start="0.15"/>
+            <part id="karg e" start="0.15*"/>
         </concert>
         <concert id="2b0">
-            <part id="tibetloop down" start="2.15"/>
+            <part id="tibetloop down" start="2.15*"/>
         </concert>
         <concert id="2b7.40">
-            <part id="revcrash" start="0.15"/>
+            <part id="revcrash" start="0.15*"/>
         </concert>
         <concert id="2b8">
-            <part id="karg e" start="1.15"/>
+            <part id="karg e" start="1.15*"/>
         </concert>
         <concert id="2b13">
-            <part id="Ken 3" start="2.15"/>
+            <part id="Ken 3" start="2.15*"/>
         </concert>
         <concert id="2b18">
-            <part id="Klarnbreath" variant="2" start="0.40"/>
+            <part id="Klarnbreath" variant="2" start="0.40*"/>
         </concert>
         <concert id="2c0">
-            <part id="Ken 3" start="2.15"/>
+            <part id="Ken 3" start="2.15*"/>
         </concert>
         <concert id="2c5">
-            <part id="karg e" start="0.15"/>
+            <part id="karg e" start="0.15*"/>
         </concert>
         <concert id="2c9">
-            <part id="Klarnbreath" variant="2" start="1.40"/>
+            <part id="Klarnbreath" variant="2" start="1.40*"/>
         </concert>
         <concert id="2c12">
-            <part id="more git shit 7" start="0.15"/>
+            <part id="more git shit 7" start="0.15*"/>
         </concert>
         <concert id="2c12.30">
-            <part id="tibetloop down" start="2.05"/>
+            <part id="tibetloop down" start="2.05*"/>
         </concert>
         <concert id="2A">
             <part id="2a0" start="0"/>
@@ -3130,61 +3099,61 @@
             <part id="2c12.30" start="12.30"/>
         </concert>
         <concert id="3a0">
-            <part id="gongs down" start="1.05"/>
+            <part id="gongs down" start="1.05*"/>
         </concert>
         <concert id="3a2">
-            <part id="dung norway 2" start="0.32"/>
+            <part id="dung norway 2" start="0.32*"/>
         </concert>
         <concert id="3a3">
-            <part id="hypo end" start="0.40"/>
+            <part id="hypo end" start="0.40*"/>
         </concert>
         <concert id="3a5">
-            <part id="loud beat" start="0.20"/>
+            <part id="loud beat" start="0.20*"/>
         </concert>
         <concert id="3a7">
-            <part id="kyz" start="0.58"/>
+            <part id="kyz" start="0.58*"/>
         </concert>
         <concert id="3a10">
-            <part id="electrodrone down" start="1.58"/>
+            <part id="electrodrone down" start="1.58*"/>
         </concert>
         <concert id="3a16">
-            <part id="Gong kyz" start="0.15"/>
+            <part id="Gong kyz" start="0.15*"/>
         </concert>
         <concert id="3b0">
-            <part id="loud beat" start="0.20"/>
+            <part id="loud beat" start="0.20*"/>
         </concert>
         <concert id="3b2">
-            <part id="Gong kyz" start="0.15"/>
+            <part id="Gong kyz" start="0.15*"/>
         </concert>
         <concert id="3b6">
-            <part id="electrodrone down" start="1.58"/>
+            <part id="electrodrone down" start="1.58*"/>
         </concert>
         <concert id="3b12">
-            <part id="gongs down" start="2.05"/>
+            <part id="gongs down" start="2.05*"/>
         </concert>
         <concert id="3b15">
-            <part id="pounding 4" start="0.55"/>
+            <part id="pounding 4" start="0.55*"/>
         </concert>
         <concert id="3b17">
-            <part id="skywatermoon" start="0.58"/>
+            <part id="skywatermoon" start="0.58*"/>
         </concert>
         <concert id="3c0">
-            <part id="kyz" start="0.58"/>
+            <part id="kyz" start="0.58*"/>
         </concert>
         <concert id="3c3">
-            <part id="electrodrone down" start="1.58"/>
+            <part id="electrodrone down" start="1.58*"/>
         </concert>
         <concert id="3c9">
-            <part id="gongs down" start="1.05"/>
+            <part id="gongs down" start="1.05*"/>
         </concert>
         <concert id="3c11">
-            <part id="Gong kyz" start="0.15"/>
+            <part id="Gong kyz" start="0.15*"/>
         </concert>
         <concert id="3c15">
-            <part id="rock ock" start="0.20"/>
+            <part id="rock ock" start="0.20*"/>
         </concert>
         <concert id="3c17">
-            <part id="rock fire" start="0.45"/>
+            <part id="rock fire" start="0.45*"/>
         </concert>
         <concert id="3A">
             <part id="3a0" start="0"/>
@@ -3212,58 +3181,58 @@
             <part id="3c17" start="17.00"/>
         </concert>
         <concert id="4a0">
-            <part id="gendos cello kyz" start="1.16"/>
+            <part id="gendos cello kyz" start="1.16*"/>
         </concert>
         <concert id="4a4">
-            <part id="skywatermoon" start="0.58"/>
+            <part id="skywatermoon" start="0.58*"/>
         </concert>
         <concert id="4a7">
-            <part id="gendos a smeaze1" start="0.39"/>
+            <part id="gendos a smeaze1" start="0.39*"/>
         </concert>
         <concert id="4a8">
-            <part id="karg noise g" start="1.38"/>
+            <part id="karg noise g" start="1.38*"/>
         </concert>
         <concert id="4a15">
-            <part id="mad live loop" start="0.58"/>
+            <part id="mad live loop" start="0.58*"/>
         </concert>
         <concert id="4a19">
-            <part id="thunder" variant="2" start="0.40"/>
+            <part id="thunder" variant="2" start="0.40*"/>
         </concert>
         <concert id="4b0">
-            <part id="karg noise g" start="2.18"/>
+            <part id="karg noise g" start="2.18*"/>
         </concert>
         <concert id="4b7.40">
-            <part id="more git shit 6" start="0.14"/>
+            <part id="more git shit 6" start="0.14*"/>
         </concert>
         <concert id="4b8">
-            <part id="mad live loop" start="0.58"/>
+            <part id="mad live loop" start="0.58*"/>
         </concert>
         <concert id="4b12">
-            <part id="skywatermoon" start="0.58"/>
+            <part id="skywatermoon" start="0.58*"/>
         </concert>
         <concert id="4b15">
-            <part id="pounding 4" start="0.57"/>
+            <part id="pounding 4" start="0.57*"/>
         </concert>
         <concert id="4b17">
-            <part id="gendos cello kyz" start="0.18"/>
+            <part id="gendos cello kyz" start="0.18*"/>
         </concert>
         <concert id="4c0">
-            <part id="SIL 6.3" start="0.58"/>
+            <part id="SIL 6.3" start="0.58*"/>
         </concert>
         <concert id="4c3">
-            <part id="mad live loop" start="0.58"/>
+            <part id="mad live loop" start="0.58*"/>
         </concert>
         <concert id="4c7">
-            <part id="gendos cello kyz" start="1.16"/>
+            <part id="gendos cello kyz" start="1.16*"/>
         </concert>
         <concert id="4c11">
-            <part id="revcrash" start="0.15"/>
+            <part id="revcrash" start="0.15*"/>
         </concert>
         <concert id="4c11.20">
-            <part id="karg noise g" start="2.18"/>
+            <part id="karg noise g" start="2.18*"/>
         </concert>
         <concert id="4c19">
-            <part id="storm" start="0.55"/>
+            <part id="storm" start="0.55*"/>
         </concert>
         <concert id="4A">
             <part id="4a0" start="0"/>
@@ -3290,58 +3259,58 @@
             <part id="4c19" start="19.00"/>
         </concert>
         <concert id="5a0">
-            <part id="Lisa 1" start="0.10"/>
+            <part id="Lisa 1" start="0.10*"/>
         </concert>
         <concert id="5a1">
-            <part id="dung norway 1" start="1.45"/>
+            <part id="dung norway 1" start="1.45*"/>
         </concert>
         <concert id="5a4">
-            <part id="Track 9 down" start="1.30"/>
+            <part id="Track 9 down" start="1.30*"/>
         </concert>
         <concert id="5a10">
-            <part id="SIL 6.4" start="1.02"/>
+            <part id="SIL 6.4" start="1.02*"/>
         </concert>
         <concert id="5a14">
-            <part id="windmill" start="0.40"/>
+            <part id="windmill" start="0.40*"/>
         </concert>
         <concert id="5a17">
-            <part id="sheep ritual" start="0.40"/>
+            <part id="sheep ritual" start="0.40*"/>
         </concert>
         <concert id="5b0">
-            <part id="SIL 6.4" start="1.02"/>
+            <part id="SIL 6.4" start="1.02*"/>
         </concert>
         <concert id="5b4">
-            <part id="dung norway 1" start="0.40"/>
+            <part id="dung norway 1" start="0.40*"/>
         </concert>
         <concert id="5b6">
-            <part id="SIL 6.3" start="0.02"/>
+            <part id="SIL 6.3" start="0.02*"/>
         </concert>
         <concert id="5b9">
-            <part id="rock ock" start="0.20"/>
+            <part id="rock ock" start="0.20*"/>
         </concert>
         <concert id="5b11">
-            <part id="sheep ritual" start="0.40"/>
+            <part id="sheep ritual" start="0.40*"/>
         </concert>
         <concert id="5b14">
-            <part id="Track 9 down" start="1.30"/>
+            <part id="Track 9 down" start="1.30*"/>
         </concert>
         <concert id="5c0">
-            <part id="Track 9 down" start="1.30"/>
+            <part id="Track 9 down" start="1.30*"/>
         </concert>
         <concert id="5c6">
-            <part id="SIL 6.4" start="1.02"/>
+            <part id="SIL 6.4" start="1.02*"/>
         </concert>
         <concert id="5c10">
-            <part id="brothers" start="0.35"/>
+            <part id="brothers" start="0.35*"/>
         </concert>
         <concert id="5c12">
-            <part id="SIL 6.3" variant="2" start="0.58"/>
+            <part id="SIL 6.3" variant="2" start="0.58*"/>
         </concert>
         <concert id="5c15">
-            <part id="dung norway 1" start="1.45"/>
+            <part id="dung norway 1" start="1.45*"/>
         </concert>
         <concert id="5c18">
-            <part id="voice 2 stereo smeazed" start="0.55"/>
+            <part id="voice 2 stereo smeazed" start="0.55*"/>
         </concert>
         <concert id="5A">
             <part id="5a0" start="0"/>
@@ -3368,49 +3337,49 @@
             <part id="5c18" start="18.00"/>
         </concert>
         <concert id="6a0">
-            <part id="brothers" start="0.35"/>
+            <part id="brothers" start="0.35*"/>
         </concert>
         <concert id="6a2">
-            <part id="dungs at g's" start="2.58"/>
+            <part id="dungs at g's" start="2.58*"/>
         </concert>
         <concert id="6a8">
-            <part id="NIJ 2 down" start="0.50"/>
+            <part id="NIJ 2 down" start="0.50*"/>
         </concert>
         <concert id="6a11">
-            <part id="tdung ir b" start="0.28"/>
+            <part id="tdung ir b" start="0.28*"/>
         </concert>
         <concert id="6a14">
-            <part id="karg deep c#" start="1.48"/>
+            <part id="karg deep c#" start="1.48*"/>
         </concert>
         <concert id="6b0">
-            <part id="karg deep c#" start="1.48"/>
+            <part id="karg deep c#" start="1.48*"/>
         </concert>
         <concert id="6b6">
-            <part id="voice 2 stereo smeazed" start="0.58"/>
+            <part id="voice 2 stereo smeazed" start="0.58*"/>
         </concert>
         <concert id="6b8">
-            <part id="dungs at g's" start="4.55"/>
+            <part id="dungs at g's" start="4.55*"/>
         </concert>
         <concert id="6b16">
-            <part id="traffic" variant="3" start="0.05"/>
+            <part id="traffic" variant="3" start="0.05*"/>
         </concert>
         <concert id="6b17">
-            <part id="tdung ir b" start="0.25"/>
+            <part id="tdung ir b" start="0.25*"/>
         </concert>
         <concert id="6c0">
-            <part id="tdung ir b" start="0.25"/>
+            <part id="tdung ir b" start="0.25*"/>
         </concert>
         <concert id="6c3">
-            <part id="karg deep c#" start="1.48"/>
+            <part id="karg deep c#" start="1.48*"/>
         </concert>
         <concert id="6c9">
-            <part id="windmill" start="1.40"/>
+            <part id="windmill" start="1.40*"/>
         </concert>
         <concert id="6c13">
-            <part id="NIJ 2 down" start="0.50"/>
+            <part id="NIJ 2 down" start="0.50*"/>
         </concert>
         <concert id="6c16">
-            <part id="dungs at g's" start="0.58"/>
+            <part id="dungs at g's" start="0.58*"/>
         </concert>
         <concert id="6A">
             <part id="6a0" start="0"/>
@@ -3438,52 +3407,52 @@
             <part id="Klarnbreath" variant="2" start="0.16"/>
             <part id="gongs down" variant="1" start="0.28"/>
             <part id="gendos cello kyz" start="1.21"/>
-            <part id="dung norway 1" variant="1" start="2.00"/>
+            <part id="dung norway 1" variant="1" start="2.00*"/>
             <part id="dungs at g's" start="2.10"/>
             <part id="brothers" start="5.15"/>
             <part id="echo drone" variant="1" start="6.53"/>
-            <part id="choice 11" start="6.57"/>
-            <part id="big git shit" start="7.20"/>
+            <part id="choice 11" start="6.57*"/>
+            <part id="big git shit" start="7.20*"/>
         </concert>
         <concert id="random2">
             <part id="Track 9 down" variant="1" start="0.09"/>
             <part id="windmill" start="0.16"/>
             <part id="voice 2 stereo smeazed" start="0.28"/>
             <part id="traffic" start="1.21"/>
-            <part id="tibetloop down" variant="1" start="2.00"/>
+            <part id="tibetloop down" variant="1" start="2.00*"/>
             <part id="tibetan low bells" start="8.10"/>
             <part id="T3" start="5.15"/>
             <part id="tdung ir b" variant="1" start="6.53"/>
-            <part id="thunder" start="6.57"/>
-            <part id="T2" start="7.20"/>
+            <part id="thunder" start="6.57*"/>
+            <part id="T2" start="7.20*"/>
         </concert>
         <concert id="random3">
             <part id="T1" variant="1" start="0.09"/>
             <part id="storm" start="0.16"/>
             <part id="skywatermoon" start="0.28"/>
             <part id="SIL 6.4" start="1.21"/>
-            <part id="SIL 6.3" variant="1" start="2.00"/>
+            <part id="SIL 6.3" variant="1" start="2.00*"/>
             <part id="shinedrone" start="8.10"/>
             <part id="sheep ritual" start="5.15"/>
             <part id="rock ock" variant="1" start="6.53"/>
-            <part id="rock fire" start="6.57"/>
-            <part id="revcrash" start="7.20"/>
+            <part id="rock fire" start="6.57*"/>
+            <part id="revcrash" start="7.20*"/>
         </concert>
         <concert id="metarandom">
             <part id="random" start="0"/>
-            <part id="random2" start="6.28"/>
+            <part id="random2" start="6.28*"/>
             <part id="random3" start="9.50"/>
         </concert>
         <concert id="split 1">
-            <part id="BAS 1" variant="split 1" start="0"/>
+            <part id="BAS 1" variant="1" start="0"/>
             <part id="gongs down" variant="1" start="0.28"/>
         </concert>
         <concert id="split 2">
-            <part id="BAS 1" variant="split 2" start="0"/>
+            <part id="BAS 1" variant="2" start="0"/>
             <part id="traffic" variant="3" start="0"/>
         </concert>
         <concert id="split 3">
-            <part id="BAS 1" variant="split 3" start="0"/>
+            <part id="BAS 1" variant="3" start="0"/>
             <part id="BAS 1" variant="cello" start="0.18"/>
             <part id="rock fire" variant="3" start="0"/>
         </concert>
@@ -3626,18 +3595,18 @@
         </concert>
         <concert id="timewell 10">
             <part id="SIL 6.3" variant="1" start="0"/>
-            <part id="git shit 10" variant="time 1" start="0.01"/>
-            <part id="git shit 12" variant="time 1" start="0.03"/>
-            <part id="git shit 13" variant="time 1" start="0.09"/>
-            <part id="Nantes 2" variant="time 1" start="0"/>
-            <part id="BAS 1" variant="time 1" start="0.05"/>
-            <part id="BAS 1" variant="time 2" start="0.08"/>
+            <part id="git shit 10" variant="1" start="0.01"/>
+            <part id="git shit 12" variant="1" start="0.03"/>
+            <part id="git shit 13" variant="1" start="0.09"/>
+            <part id="Nantes 2" variant="1" start="0"/>
+            <part id="BAS 1" variant="1" start="0.05"/>
+            <part id="BAS 1" variant="2" start="0.08"/>
             <part id="SIL 6.3" variant="1" start="1.02"/>
         </concert>
         <concert id="timewell 11">
-            <part id="git shit 10" variant="time 1" start="0.01"/>
-            <part id="git shit 12" variant="time 1" start="0.03"/>
-            <part id="git shit 13" variant="time 1" start="0.09"/>
+            <part id="git shit 10" variant="1" start="0.01"/>
+            <part id="git shit 12" variant="1" start="0.03"/>
+            <part id="git shit 13" variant="1" start="0.09"/>
         </concert>
         <concert id="timewell">
             <part id="BAS 3b" start="0"/>
@@ -3704,16 +3673,16 @@
         </concert>
         <concert id="sizewell">
             <part id="sizewell a" start="0"/>
-            <part id="sizewell b" start="0.10"/>
-            <part id="sizewell c" start="0.20"/>
-            <part id="sizewell d" start="0.30"/>
-            <part id="sizewell e" start="0.20"/>
-            <part id="sizewell f" start="0.10"/>
+            <part id="sizewell b" start="0.10*"/>
+            <part id="sizewell c" start="0.20*"/>
+            <part id="sizewell d" start="0.30*"/>
+            <part id="sizewell e" start="0.20*"/>
+            <part id="sizewell f" start="0.10*"/>
         </concert>
         <concert id="after sizewell">
-            <part id="sizewell 1" start="0.01"/>
-            <part id="sizewell 2" start="0.01"/>
-            <part id="sizewell 3" start="0.02"/>
+            <part id="sizewell 1" start="0.01*"/>
+            <part id="sizewell 2" start="0.01*"/>
+            <part id="sizewell 3" start="0.02*"/>
         </concert>
         <concert id="after sizewell b">
             <part id="deep infinity" start="0"/>
@@ -3977,13 +3946,13 @@
             <part id="2c12.30" start="12.30"/>
         </concert>
         <concert id="1a8x">
-            <part id="gendos house chad 1" variant="2" start="1.14"/>
+            <part id="gendos house chad 1" variant="2" start="1.14*"/>
         </concert>
         <concert id="2c0x">
-            <part id="windmill" start="2.44"/>
+            <part id="windmill" start="2.44*"/>
         </concert>
         <concert id="2c9x">
-            <part id="crow" start="1.10"/>
+            <part id="crow" start="1.10*"/>
         </concert>
         <concert id="sequence 2">
             <part id="BAS 1" variant="3" start="0"/>
@@ -4118,8 +4087,8 @@
         <concert id="meta git shit 1">
             <part id="Gman" start="0"/>
             <part id="big git shit" start="0"/>
-            <part id="git choose 1" start="1.00"/>
-            <part id="voice 2 stereo smeazed" start="1.00"/>
+            <part id="git choose 1" start="1.00*"/>
+            <part id="voice 2 stereo smeazed" start="1.00*"/>
             <part id="pounding choose 1" start="2.30"/>
             <part id="voice 2 stereo smeazed" start="2.43"/>
             <part id="big git shit" start="2.55"/>
@@ -4141,10 +4110,10 @@
         </concert>
         <concert id="meta git shit 2">
             <part id="dopsh" start="0"/>
-            <part id="gongs down" start="40"/>
-            <part id="mgs 2 ekki" start="1.00"/>
-            <part id="Ken A" start="1.00"/>
-            <part id="Ken 2" variant="2" start="1.00"/>
+            <part id="gongs down" start="40*"/>
+            <part id="mgs 2 ekki" start="1.00*"/>
+            <part id="Ken A" start="1.00*"/>
+            <part id="Ken 2" variant="2" start="1.00*"/>
             <part id="Gman" start="1.20"/>
             <part id="altai dopsh" variant="2" start="3.00"/>
             <part id="cards" start="2.05"/>
@@ -4169,11 +4138,11 @@
         </concert>
         <concert id="meta git shit 3">
             <part id="dopsh" variant="2" start="3.00"/>
-            <part id="altai dopsh" start="2.00"/>
-            <part id="mgs 2 ekki" start="1.00"/>
-            <part id="Ken A" start="1.00"/>
-            <part id="Ken 2" variant="2" start="1.00"/>
-            <part id="Gman" start="2.20"/>
+            <part id="altai dopsh" start="2.00*"/>
+            <part id="mgs 2 ekki" start="1.00*"/>
+            <part id="Ken A" start="1.00*"/>
+            <part id="Ken 2" variant="2" start="1.00*"/>
+            <part id="Gman" start="2.20*"/>
             <part id="cards" start="0"/>
             <part id="big git shit" start="4.30"/>
             <part id="git choose 1" start="3.00"/>
@@ -4197,10 +4166,10 @@
         </concert>
         <concert id="meta git shit 4">
             <part id="dopsh" variant="3" start="3.00"/>
-            <part id="altai dopsh" start="2.00"/>
-            <part id="kit n ekki" start="1.00"/>
-            <part id="Ken A" start="1.00"/>
-            <part id="Gman" start="2.20"/>
+            <part id="altai dopsh" start="2.00*"/>
+            <part id="kit n ekki" start="1.00*"/>
+            <part id="Ken A" start="1.00*"/>
+            <part id="Gman" start="2.20*"/>
             <part id="cards" start="0"/>
             <part id="big git shit" start="4.30"/>
             <part id="SIL 6.3" variant="3" start="0.40"/>

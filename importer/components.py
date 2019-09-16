@@ -11,6 +11,7 @@ import logging
 import xml.etree.ElementTree as ET
 
 from importer.options import Option
+import utils
 
 
 class Component:
@@ -33,7 +34,7 @@ class Component:
         """
         import re
 
-        f = open("scores.xml", "r")
+        f = open(utils.SCORE_FILENAME, "r")
         src_xml = f.read()
         f.close()
         src_xml = re.sub('xmlns=".*"', '', src_xml)

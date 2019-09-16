@@ -17,7 +17,7 @@ from importer.components import Component
 # from importer import components
 from interpreter.events import *
 from importer.scores import Score
-from utils.utils import print_format_pretty as pfp
+from utils import pfp
 
 
 def report():
@@ -61,10 +61,13 @@ def dump_score_events(sample_events):
         pfp("VARIANT", sample_event["VARIANT"].id)
         pfp("TIME OFFSET", sample_event["TIME_OFFSET"])
 
-# Get the events associated with a randomly selected Score
-# current_score = scores.Score.get_random_score_events()
-# print(current_score)
-# concert_events = unpack_concert_events(current_score)
+
+# load_score_text()
+
+def xml_is_valid():
+    import xmlschema
+    schema = xmlschema.XMLSchema('scores.xsd')
+    print(schema.is_valid('scores.xml'))
 
 load_all_components()
 report()
@@ -74,13 +77,3 @@ unpack_concert_events(events)
 # print(concert_events)
 
 
-def load_score_text():
-    import re
-
-    f = open("scores.xml", "r")
-    src_xml = f.read()
-    f.close()
-    # print(src_xml)
-    src_xml = re.sub("")
-
-load_score_text()

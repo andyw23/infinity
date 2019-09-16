@@ -28,3 +28,8 @@ See `scores-template.xml` in the project root for the structure of a score file.
 **AW**: I'd be happy to sit down with you in front of a computer for a while one evening and talk you through it again. It would be easier to start with that than explaining everything by email. I'm sure you'd be up and running with it within minutes.
 
 
+## More Notes on Score Formatting
+
+concerts list other components (concerts, choices, samples)
+If a concert/part does ot specify @start, 0 is assumed
+If a conncert does not specify @variat, a sample/variat is chosen at random
