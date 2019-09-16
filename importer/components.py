@@ -19,14 +19,33 @@ class Component:
 
     Root class for component classes such as Score, Choose, Concert and Sample
     """
-
     # master dictionary of all component objects
     components = {}
     # names of the different types of components
     component_types = []
     num_component_types = 0
 
-    element_root = ET.parse('scores.xml').getroot()
+    def load_score_xml_strip_namespace():
+        """
+        Reads in the score XML as a string, but uses regex to remove namespace attributes from the root tag.
+        Namespaces are useful for validating the score.xml file, but ElementTree doesn't like them
+        :return:
+        """
+        import re
+
+        f = open("scores.xml", "r")
+        src_xml = f.read()
+        f.close()
+        src_xml = re.sub('xmlns=".*"', '', src_xml)
+        src_xml = re.sub('xmlns:xsi=".*"', '', src_xml)
+        src_xml = re.sub('xsi:schemaLocation=".*"', '', src_xml)
+        return src_xml
+
+    # element_root = ET.parse('scores.xml').getroot()
+    # element_root = ET.ElementTree(ET.fromstring(load_score_text()).getroot()
+    score_xml_string = load_score_xml_strip_namespace()
+    element_root = ET.fromstring(score_xml_string)
+
 
     def get_by_type(type_name):
         # Returns from the components dictionary a list of all objects of the requested type, where the type_name argumeent must be one of the component_types in the Component.component_types list.
