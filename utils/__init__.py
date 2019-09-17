@@ -16,6 +16,7 @@ def pfp(desc, val):
 CONFIG PARSER
 """
 from configparser import ConfigParser
+import os
 
 CONF_FILE = 'config.ini'
 cfg = ConfigParser()
@@ -23,3 +24,4 @@ cfg.read(CONF_FILE)
 SCORE_FILENAME = cfg.get('scores', 'filename')
 AUDIO_PATH = cfg.get('audio', 'path')
 AUDIO_EXTENSION = cfg.get('audio', 'format')
+AUDIO_PATH = os.path.abspath(os.path.join(os.getcwd(), AUDIO_PATH))

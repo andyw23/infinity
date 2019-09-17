@@ -10,9 +10,6 @@ class Choice(Component):
     component_type = 'CHOICE'
     elements_str = "./components/choose"
 
-    def get_elements():
-        return Component.get_elements(Choice.elements_str)
-
     def __init__(self, choice):
         self.component_type = Choice.component_type
         self.id = choice.get("id").upper()
@@ -39,7 +36,7 @@ class Choice(Component):
     def _get_option_object_by_id(self, option_id):
         return Component.get_component_by_id(option_id)
 
-    def get_events(self, time_offset, variant_id):
+    def get_sample_components(self, time_offset, variant_id):
         """
         :param partoption: Part or Option
         :param time_offset: float
@@ -50,5 +47,11 @@ class Choice(Component):
         # get the component object indicated by the chosen option
         obj = self._get_option_object_by_id(option.id)
         # play the object, passing on the option.variant_id
-        return [] + obj.get_events(time_offset, option.variant_id)
+        return [] + obj.get_sample_components(time_offset, option.variant_id)
+
+    """
+    CLASS METHODS
+    """
+    def get_elements():
+        return Component.get_elements(Choice.elements_str)
 

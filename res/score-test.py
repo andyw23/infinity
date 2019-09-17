@@ -15,7 +15,7 @@ class ComponentsTest(unittest.TestCase):
         #     ch.test_get_all_option_events()
         cts = components.Component.get_by_type('CONCERT')
         for ct in cts:
-            ct.get_events(0.0, None)
+            ct.get_sample_components(0.0, None)
 
 class SamplesTest(unittest.TestCase):
     def test_samples_have_variants(self):

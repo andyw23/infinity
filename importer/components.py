@@ -137,7 +137,7 @@ def get_time_value(owner=None, length_str=None):
     :param length_str: a string representing a length of time
     :return: float - time in seconds, None if None is
     """
-    # if None is passed (which happens when a tiem attribute is not set), return None
+    # if None is passed (which happens when a time attribute is not set), return None
     if length_str == None: return None
     res = 0.0
     # if the string containst ':', interpret the first part as minutes

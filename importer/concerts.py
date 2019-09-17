@@ -8,9 +8,6 @@ class Concert(Component):
     component_type = 'CONCERT'
     elements_str = "./components/concert"
 
-    def get_elements():
-        return Component.get_elements(Concert.elements_str)
-
     def __init__(self, concert):
         self.component_type = Concert.component_type
         self.id = concert.get("id").upper()
@@ -31,7 +28,7 @@ class Concert(Component):
     def _has_no_parts(self):
         return (not self._has_parts())
 
-    def get_events(self, time_offset, variant_id):
+    def get_sample_components(self, time_offset, variant_id):
         """
         Returns a list of events pertaining to this concert
 
@@ -43,5 +40,12 @@ class Concert(Component):
         for part in self.parts.values():
             obj = Component.get_component_by_id(part.id)
             time_offset = Component.add_time_offset_and_partoption(time_offset, part)
-            res += obj.get_events(time_offset, part.variant_id)
+            res += obj.get_sample_components(time_offset, part.variant_id)
         return res
+
+    """
+    CLASS METHODS
+    """
+    def get_elements():
+        return Component.get_elements(Concert.elements_str)
+

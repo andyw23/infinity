@@ -48,7 +48,7 @@ def load_all_components():
 def load_all_scores():
     scores = Score.get_all_scores()
     for score in scores:
-        print(unpack_concert_events(score.get_events()))
+        print(unpack_concert_events(score.get_sample_components()))
 
 def dump_score_events(sample_events):
     """
@@ -71,9 +71,9 @@ def xml_is_valid():
 
 load_all_components()
 report()
-events = Score.get_random_score_events()
+random_score_events = Score.get_random_score_sample_components()
 # dump_score_events(events)
-unpack_concert_events(events)
+command_events = unpack_concert_events(random_score_events)
 # print(concert_events)
 
 

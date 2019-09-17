@@ -127,5 +127,5 @@ dmypy.json
 
 !/.env/
 !/import.log
-!/import.log
-!/static/
+!/static/*
+*.wav

@@ -1,0 +1,96 @@
+<program name="Tim 16">
+    <!-- A NOTE ON IDs -->
+    <!-- ID attributes are not case sensitive. IDs of Sample, Choose, -->
+    <!-- Concert, and Score elements must be globally unique -->
+    <components>
+
+        <!--                -->
+        <!--     SAMPLE     -->
+        <!--                -->
+        <!-- sample @id: Unique ID. Required. -->
+        <!-- sample @length: The length of the file in MM.SS. REQIRED-->
+        <!-- It os specified in minutes and seconds, MM:SS -->
+        <!-- sample @file: Filename of the associated sample file. -->
+        <!-- no need for an extension on the filename -->
+        <sample id="MY_SAMPLE_COMPONENT_ID_1" file="name-of-file" length="MM.SSSS">
+            <!-- variant @id: ID of this variant, unique for the sample -->
+            <!-- shows possible sample control properties -->
+            <!-- loopendtime>2000</loopendtime -->
+            <variant id="VARIANT_ID_NAME_1">
+                <!-- loopCount. 0 = infinite (until looplength) -->
+                <!-- otherwise, sample plays for n * sample.length -->
+                <loopcount>0</loopcount>
+                <!-- looplength. when to end an infinite loop. in mins:secs  -->
+                <looplength>1:30</looplength>
+                <!-- loop start time within the sample, in mS -->
+                <!-- if not set, defaults to 0.0 -->
+                <loopstarttime>12899</loopstarttime>
+                <!-- loop end time within the sample, in mS -->
+                <!-- if not set, defaults to containing sample length -->
+                <loopendtime>81420</loopendtime>
+                <!-- Each dynamics tag contains one or more instructions to set the dynamic level at a point in time. -->
+                <!-- Taken together they let you construct ADSL envelopes, etc. -->
+                <dynamics>
+                    <!-- dynamics instructions. values are 0-255. time is in mins:secs -->
+                    <!-- nb. level will fade between these two values -->
+                    <instruction time="0" level="0"/>
+                    <instruction time="0.15" level="100"/>
+                    <instruction time="1.05" level="100"/>
+                    <instruction time="1.20" level="0"/>
+                </dynamics>
+            </variant>
+        </sample>
+
+        <!--                -->
+        <!--     CONCERT    -->
+        <!--                -->
+        <!-- A concert lists a number of components to be played. -->
+        <!-- Each component can be given a start time, which is a time -->
+        <!-- offset from when the concert is launched / starts to play -->
+        <concert id="CONCERT_ID_NAME">
+            <!-- part @id: ID of the part to be played. Unique for this concert -->
+            <!-- part @start: Start time in milliseconds -->
+            <!-- if @start is not specified it is assumed to be 0 -->
+            <part id="PART_ID_NAME_1" start="0"/>
+            <part id="PART_ID_NAME_2" start="0"/>
+            <part id="PART_ID_NAME_3" start="0"/>
+            <part id="PART_ID_NAME_4" start="0"/>
+            <part id="PART_ID_NAME_5" start="500"/>
+            <part id="PART_ID_NAME_6" start="1000"/>
+        </concert>
+
+        <!--                -->
+        <!--     CHOOSE     -->
+        <!--                -->
+        <!-- Choose (choice) is a component that defines parts, which are options -->
+        <!-- When a choice component is executed in the score, one of -->
+        <!-- the parts / options is selected at random and executed. -->
+        <!-- The parts / options are therefore other components. They can be -->->
+        <!-- samples, concerts or other choices -->
+        <!-- choose @id: Unique Choose Component ID for this Choose -->
+        <choose id="MY_CHOICE_ID_1">
+            <!-- @id: Unique ID of another component -->
+            <!-- @variant: If the component is a sample, this specifies the id -->
+            <!-- of the variant to be played -->
+            <!-- @start: Specifies the start offset time in MM.SS. -->
+            <!-- if @start is not specified it is assumed to be 0 -->
+            <part id="MY_COMPONENT_ID_1" variant="cello"/>
+            <part id="MY_COMPONENT_ID_2" variant="MY_SAMPLE_VARIANT_ID"/>
+            <part id="MY_COMPONENT_ID_3" start="0.01"/>
+        </choose>
+    </components>
+    <scores>
+
+        <!--                -->
+        <!--     SCORE      -->
+        <!--                -->
+        <!-- A score is simply a point of entry into the sea of components. -->
+        <!-- score @id: Unique Score Component ID -->
+        <!-- Used as the name of the score in the program -->
+        <score id="BIG RANDOM+">
+            <!-- This is the component that will be executed first if this score is played. -->
+            <!-- create @id: ID of the component to be called if this score is executed. -->
+            <create id="randomised plus"/>
+        </score>
+    </scores>
+</program>

@@ -2649,7 +2649,6 @@
             <variant id="4">
                 <loopstarttime>0</loopstarttime>
                 <loopendtime>600000</loopendtime>
-                >
                 <dynamics>
                     <instruction time="0" level="30"/>
                     <instruction time="9.35" level="30"/>
