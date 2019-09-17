@@ -99,8 +99,8 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
-.env
-.venv
+.env/
+.venv/
 env/
 venv/
 ENV/
@@ -133,4 +133,4 @@ dmypy.json
 /res/scores
 .DS_Store
 .env/include/site/
-.idea
+/.idea
