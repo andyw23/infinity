@@ -125,7 +125,12 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-!/.env/
-!/import.log
-!/static/*
-*.wav
+/.env
+/.env/**
+/import.log
+/static
+/static/**
+/res/scores
+.DS_Store
+.env/include/site/
+.idea
