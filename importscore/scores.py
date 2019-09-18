@@ -23,6 +23,7 @@ class Score(Component):
     def get_sample_components(self):
         """
         Retrieves all the sample components invoked by this score. The sample components relating to a score are in a dict that contains the sample component itself, the relevant variant and some offset timing information. This info is later used by the interpreter to produce commands to drive the audio engine.
+
         :return: List
         """
         obj = Component.get_component_by_id(self.create_id)
