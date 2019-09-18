@@ -99,7 +99,6 @@ class Sample(Component):
         return len(no_variants)
 
     def log_sample_events(sample_events):
-        res = '\n\n----------------------------------\nSAMPLE EVENTS\n----------------------------------'
         for sevent in sample_events:
             logging.info("SAMPLE: {0} VARIANT: {1} TIME OFFSET: {2:07.4f} DEPTH: {3:03d}".format(isinstance(sevent['SAMPLE'], object), isinstance(sevent['VARIANT'], object), sevent['TIME_OFFSET'], sevent['DEPTH']))
 

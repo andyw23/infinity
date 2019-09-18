@@ -1,6 +1,5 @@
-"""manager.py
+"""infinity.py
 Andy Wilson, 2019
-
 Imports the scores.xml file and parses it into memory
 This is not invoked explicitly but happens automatically when the modules are imported
 """
@@ -11,44 +10,20 @@ logging.basicConfig(
     format='%(asctime)s:%(msecs)03d: %(levelname)s: %(module)s: %(funcName)s: %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
-# ^([^\[]+)(\[[\s\d]+])\s*(\w*)\s*-\s*(\S*)\s*-(.+)$
-from importer import *
-from importer.components import Component
-# from importer import components
-from interpreter.events import *
-from importer.scores import Score
+
+from importscore.scores import Score
+from importscore.samples import Sample
+from importscore import components
+from importscore import load_components, score_is_valid
+from interpret.concert_events import *
 from utils import pfp
-
-
-def report():
-    """
-    Writes a brief report on the import process
-    :return: None
-    """
-    print("------------------------------")
-    pfp("COMPONENTS CREATED", len(Component.components))
-    pfp("TYPES FOUND", Component.num_component_types)
-    for typ in Component.component_types:
-        pfp("- " + typ + "S LOADED", Component.num_by_type(typ))
-    print("------------------------------")
-
-
-def load_all_components():
-    """
-    Loads all of the Choose, Concert, Score and Sample components.
-    These then exist int he dictionary Component.components, with the IDs as the keys
-    :return: None
-    """
-    Component.load_type_objects(samples.Sample)
-    Component.load_type_objects(choices.Choice)
-    Component.load_type_objects(concerts.Concert)
-    Component.load_type_objects(scores.Score)
+from schedule import schedule_command_events, schedule_run
 
 
 def load_all_scores():
     scores = Score.get_all_scores()
     for score in scores:
-        print(unpack_concert_events(score.get_sample_components()))
+        print(unpack_score_events(score.get_sample_components()))
 
 def dump_score_events(sample_events):
     """
@@ -64,16 +39,13 @@ def dump_score_events(sample_events):
 
 # load_score_text()
 
-def xml_is_valid():
-    import xmlschema
-    schema = xmlschema.XMLSchema('scores.xsd')
-    print(schema.is_valid('scores.xml'))
+print(score_is_valid())
 
-load_all_components()
-report()
-random_score_events = Score.get_random_score_sample_components()
-# dump_score_events(events)
-command_events = unpack_concert_events(random_score_events)
-# print(concert_events)
-
-
+load_components()
+components.log_components_loaded()
+sample_events = Score.get_random_score_sample_components()
+Sample.log_sample_events(sample_events)
+command_events = unpack_score_events(sample_events)
+log_command_events(command_events)
+schedule_command_events(command_events)
+# schedule_run()
