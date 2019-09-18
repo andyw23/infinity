@@ -16,12 +16,22 @@ def pfp(desc, val):
 CONFIG PARSER
 """
 from configparser import ConfigParser
-import os
+import os, logging
 
 CONF_FILE = 'config.ini'
 cfg = ConfigParser()
 cfg.read(CONF_FILE)
+
 SCORE_FILENAME = cfg.get('scores', 'filename')
+logging.info("SCORE_FILENAME: {0}".format(SCORE_FILENAME))
+
+SCHEMA_FILENAME = cfg.get('scores', 'schemaname')
+logging.info("SCHEMA_FILENAME: {0}".format(SCHEMA_FILENAME))
+
 AUDIO_PATH = cfg.get('audio', 'path')
+
 AUDIO_EXTENSION = cfg.get('audio', 'format')
+logging.info("AUDIO_EXTENSION: {0}".format(AUDIO_EXTENSION))
+
 AUDIO_PATH = os.path.abspath(os.path.join(os.getcwd(), AUDIO_PATH))
+logging.info("AUDIO_PATH: {0}".format(AUDIO_PATH))
