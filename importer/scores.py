@@ -29,8 +29,14 @@ class Score(Component):
         obj = Component.get_component_by_id(self.create_id)
         obj = Component.get_component_by_id(obj.id)
         # pass the starting time (0.0) and
-        return obj.get_sample_components(time_offset=0.0, variant_id=None)
-
+        sample_components = obj.get_sample_components(time_offset=0.0, variant_id=None)
+        # before returning, as the same sample may be invoked several times by the same score, each innvokation needs a unique id
+        ids = []
+        for sample_component in sample_components:
+            id = sample_component['SAMPLE'].id
+            ids.append(id)
+            sample_component['UID'] = "{0}{1:3}".format(id, ids.countid)
+        return sample_components
     """
     CLASS METHODS
     """
