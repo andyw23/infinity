@@ -32,4 +32,26 @@ See `scores-template.xml` in the project root for the structure of a score file.
 
 concerts list other components (concerts, choices, samples)
 If a concert/part does ot specify @start, 0 is assumed
-If a conncert does not specify @variat, a sample/variat is chosen at random
+If a conncert does not specify @variat, a sample/variant is chosen at random
+
+## Flow Through the Program
+```puml
+@startwbs
+* Importscore
+** interpret
+*** Schedule
+**** Play
+
+```
+
+#### Importscore
+The score is read and the sample, choose, concert and score components are read into memory. When a score is chosen it can be called on to calculate and return all of the samle and variant objects it needs, witht he associated offset timings.
+
+#### Interpret
+Here the data returned by the importer is turned into a dictionary. The keys are time values. The values associated with the time values are lists of in formation to be fed intot he scheduler, including the raw sample data of sub-loops, and the path to sound files for complete loops.
+
+#### Schedule
+The insturctions produced by the interpreter are passed to the scheduler, which queues them up for execution.
+
+#### Play
+The scheduler passes on commands as appropriate to the player.

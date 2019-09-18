@@ -23,15 +23,21 @@ cfg = ConfigParser()
 cfg.read(CONF_FILE)
 
 SCORE_FILENAME = cfg.get('scores', 'filename')
+if SCORE_FILENAME == None: SCORE_FILENAME = 'infinity.xml'
 logging.info("SCORE_FILENAME: {0}".format(SCORE_FILENAME))
 
 SCHEMA_FILENAME = cfg.get('scores', 'schemaname')
 logging.info("SCHEMA_FILENAME: {0}".format(SCHEMA_FILENAME))
 
-AUDIO_PATH = cfg.get('audio', 'path')
-
 AUDIO_EXTENSION = cfg.get('audio', 'format')
+if AUDIO_EXTENSION == None: AUDIO_EXTENSION = 'wav'
 logging.info("AUDIO_EXTENSION: {0}".format(AUDIO_EXTENSION))
 
+AUDIO_PATH = cfg.get('audio', 'path')
 AUDIO_PATH = os.path.abspath(os.path.join(os.getcwd(), AUDIO_PATH))
+if AUDIO_PATH == None: AUDIO_PATH = '.'
 logging.info("AUDIO_PATH: {0}".format(AUDIO_PATH))
+
+FADE_TIME = cfg.getint('player', 'default_fade_time_ms')
+if FADE_TIME == None: FADE_TIME = 20
+logging.info("FADE_TIME: {0}".format(FADE_TIME))

@@ -44,18 +44,28 @@ class Score(Component):
     def get_elements():
         return Component.get_elements(Score.elements_str)
 
-    def get_random_score():
-        if not Component.has_type(Score.component_type):
-            logging.error("No Scores found among the components")
-        else:
-            return random.choice(Component.get_by_type(Score.component_type))
-
-    def get_random_score_sample_components():
-        return Score.get_random_score().get_sample_components()
-
     def get_all_scores():
         scores = Component.get_by_type(Score.component_type)
         if len(scores) == 0:
             logging.error("No scores found")
+            return None
         else:
             return scores
+
+    def get_score(arg):
+        scores = Component.get_elements()
+        if len(scores) == 0:
+            logging.error("No scores found search with arg: '{0}'".format(arg))
+            return None
+        elif isinstance(arg, str):
+            scores = [scr in scores if scr.id == arg]
+            if len(scores) == 0:
+                logging.error("Score '{0}' not found".format(arg))
+                return None
+            else:
+                return scores[0]
+        elif isinstance(arg, int):
+            if arg > len(scores):
+                logging.error("Score index out of bounds. Searched for score #{0}. Only {1} scores found".format(arg, len(scores)))
+            else:
+                return scores[arg-1]
