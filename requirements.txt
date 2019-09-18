@@ -1,4 +1,4 @@
 pygame==1.9.6
-xmlschema
-pydub
-ffmpeg
+xmlschema==1.0.14
+pydub==0.23.1
+ffmpeg==1.4
