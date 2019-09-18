@@ -36,10 +36,11 @@ class Choice(Component):
     def _get_option_object_by_id(self, option_id):
         return Component.get_component_by_id(option_id)
 
-    def get_sample_components(self, time_offset, variant_id):
+    def get_sample_components(self, time_offset, variant_id, depth):
         """
         :param partoption: Part or Option
         :param time_offset: float
+        :param depth: -> int : How deep down we are into the component tree
         :return: List
         """
         # choose at random between the available options
@@ -47,7 +48,7 @@ class Choice(Component):
         # get the component object indicated by the chosen option
         obj = self._get_option_object_by_id(option.id)
         # play the object, passing on the option.variant_id
-        return [] + obj.get_sample_components(time_offset, option.variant_id)
+        return [] + obj.get_sample_components(time_offset, option.variant_id, ++depth)
 
     """
     CLASS METHODS

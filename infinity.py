@@ -14,23 +14,13 @@ logging.basicConfig(
 
 from importscore.components import Component
 from importscore.scores import Score
+from importscore.samples import Sample
+from importscore import components
+from importscore.components import log_components_loaded
 from importscore import load_components, score_is_valid
 from interpret.concert_events import *
 from utils import pfp
 from schedule import schedule_command_events, schedule_run
-
-
-def report():
-    """
-    Writes a brief report on the import process
-    :return: None
-    """
-    print("------------------------------")
-    pfp("COMPONENTS CREATED", len(Component.components))
-    pfp("TYPES FOUND", Component.num_component_types)
-    for typ in Component.component_types:
-        pfp("- " + typ + "S LOADED", Component.num_by_type(typ))
-    print("------------------------------")
 
 
 def load_all_scores():
@@ -55,8 +45,10 @@ def dump_score_events(sample_events):
 print(score_is_valid())
 
 load_components()
-report()
+components.log_components_loaded()
 sample_events = Score.get_random_score_sample_components()
+Sample.log_sample_events(sample_events)
 command_events = unpack_score_events(sample_events)
+log_command_events(command_events)
 schedule_command_events(command_events)
 # schedule_run()

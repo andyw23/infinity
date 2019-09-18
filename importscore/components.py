@@ -153,3 +153,12 @@ def get_time_value(owner=None, length_str=None):
         return res
     except ValueError:
         logging.error("Time attribute '{0}', belonging to {1}: {2}, is not a float".format(length_str, owner.component_type, owner.id))
+
+def log_components_loaded():
+    """
+    Writes a brief log report on the import process
+    """
+    logging.info("COMPONENTS CREATED: {}".format(len(Component.components)))
+    logging.info("TYPES FOUND: {}".format(Component.num_component_types))
+    for typ in Component.component_types:
+        logging.info(typ + "S LOADED: {}".format(Component.num_by_type(typ)))

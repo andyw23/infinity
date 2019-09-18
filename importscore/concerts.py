@@ -28,19 +28,20 @@ class Concert(Component):
     def _has_no_parts(self):
         return (not self._has_parts())
 
-    def get_sample_components(self, time_offset, variant_id):
+    def get_sample_components(self, time_offset, variant_id, depth):
         """
         Returns a list of events pertaining to this concert
 
         :param partoption: Part or Option
         :param time_offset: float
+        :param depth: -> int : How deep down we are into the component tree
         :return: list of saple dictionaries and / or other concert lists
         """
         res = []
         for part in self.parts.values():
             obj = Component.get_component_by_id(part.id)
             time_offset = Component.add_time_offset_and_partoption(time_offset, part)
-            res += obj.get_sample_components(time_offset, part.variant_id)
+            res += obj.get_sample_components(time_offset, part.variant_id, ++depth)
         return res
 
     """

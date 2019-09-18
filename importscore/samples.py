@@ -72,17 +72,19 @@ class Sample(Component):
             return True
 
 
-    def get_sample_components(self, time_offset, variant_id):
+    def get_sample_components(self, time_offset, variant_id, depth):
         """
-        :param partoption: Part or Option
-        :param time_offset: float
+        :param partoption: -> Part or Option
+        :param time_offset: -> float
+        :param depth: -> int : How deep down we are into the component tree
         """
         # TODO: make sure get_variant_by_id does checks, and raises an error as appropriate
         variant = self.get_variant_by_id(variant_id)
         if isinstance(variant, str):
             print("stop a moment")
+        # TODO: consider bailing if the depth is greater than some limit tbc
         # TODO: Rounding the time offset to a limited number of places. Is that the right thing to do?
-        return [{'SAMPLE': self, 'VARIANT': variant, 'TIME_OFFSET': round(time_offset, 4)}]
+        return [{'SAMPLE': self, 'VARIANT': variant, 'TIME_OFFSET': round(time_offset, 4), 'DEPTH':++depth}]
 
     """
     CLASS METHODS
@@ -96,6 +98,10 @@ class Sample(Component):
         no_variants = [obj for obj in samps if len(obj.variants) == 0]
         return len(no_variants)
 
+    def log_sample_events(sample_events):
+        res = '\n\n----------------------------------\nSAMPLE EVENTS\n----------------------------------'
+        for sevent in sample_events:
+            logging.info("SAMPLE: {0} VARIANT: {1} TIME OFFSET: {2:07.4f} DEPTH: {3:03d}".format(isinstance(sevent['SAMPLE'], object), isinstance(sevent['VARIANT'], object), sevent['TIME_OFFSET'], sevent['DEPTH']))
 
 class Variant:
     """
@@ -143,7 +149,7 @@ class Variant:
 
         If the playback starts > 0, or ends < loopsamplelength, this si a subloop
         """
-        self.is_subloop = (self.loopstarttime > 0) | (self.loopendtime < self.loopsamplelength)
+        self.is_subloop = (self.loopstarttime > 0) | (self.loopendtime < owner_sample.length_ms)
 
 
         ###################################################
@@ -164,17 +170,16 @@ class Variant:
         self.looplength = self.get_data(variant, "looplength")
         self.looplength = components.get_time_value(self, self.looplength)
 
-        logging.info("----------------------------------")
-        logging.info("OWNER: {0}".format(owner_sample.id))
-        logging.info("OWNER LENGTH: {0}".format(owner_sample.length_ms))
-        logging.info("VARIANT ID: {0}".format(self.id))
-        logging.info("START TIME: {0}".format(self.loopstarttime))
-        logging.info("END TIME: {0}".format(self.loopendtime))
-        logging.info("LOOP LENGTH: {0}".format(self.loopsamplelength))
-        logging.info("IS_SUBLOOP: {0}".format(self.is_subloop))
-        logging.info("LOOP COUNT: {0}".format(self.loopcount))
-        logging.info("LOOP LENGTH: {0}".format(self.looplength))
-
+        # logging.info("----------------------------------")
+        # logging.info("OWNER: {0}".format(owner_sample.id))
+        # logging.info("OWNER LENGTH: {0}".format(owner_sample.length_ms))
+        # logging.info("VARIANT ID: {0}".format(self.id))
+        # logging.info("START TIME: {0}".format(self.loopstarttime))
+        # logging.info("END TIME: {0}".format(self.loopendtime))
+        # logging.info("LOOP SAMPLE LENGTH: {0}".format(self.loopsamplelength))
+        # logging.info("IS_SUBLOOP: {0}".format(self.is_subloop))
+        # logging.info("LOOP COUNT: {0}".format(self.loopcount))
+        # logging.info("LOOP LENGTH: {0}".format(self.looplength))
 
     def get_data(self, variant, str):
         res = variant.find(str, None)
