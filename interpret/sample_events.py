@@ -1,4 +1,5 @@
 from pydub import AudioSegment
+from utils import FADE_TIME
 
 
 class SampleEventsGenerator():
@@ -40,6 +41,9 @@ class SampleEventsGenerator():
     def make_start_event(self):
         event = self.get_basic_event_info()
         event['COMMAND'] = 'START'
+        event['LOOP_LENGTH'] = self.variant.looplength
+        event['LOOP_COUNT'] = self.variant.loopcount
+        event['FADE_MS'] = FADE_TIME
         event['SOUND'] = self.get_sample_sound()
         self.sample_events.append(event)
 
