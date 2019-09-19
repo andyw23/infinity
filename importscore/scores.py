@@ -52,13 +52,13 @@ class Score(Component):
         else:
             return scores
 
-    def get_score(arg):
-        scores = Component.get_elements()
+    def get_score(arg=None):
+        scores = Component.get_by_type(Score.component_type)
         if len(scores) == 0:
             logging.error("No scores found search with arg: '{0}'".format(arg))
             return None
         elif isinstance(arg, str):
-            scores = [scr in scores if scr.id == arg]
+            scores = [scr for scr in scores if scr.id == arg]
             if len(scores) == 0:
                 logging.error("Score '{0}' not found".format(arg))
                 return None
@@ -69,3 +69,5 @@ class Score(Component):
                 logging.error("Score index out of bounds. Searched for score #{0}. Only {1} scores found".format(arg, len(scores)))
             else:
                 return scores[arg-1]
+        else:
+            return random.choice(scores)

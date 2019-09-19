@@ -38,6 +38,12 @@ AUDIO_PATH = os.path.abspath(os.path.join(os.getcwd(), AUDIO_PATH))
 if AUDIO_PATH == None: AUDIO_PATH = '.'
 logging.info("AUDIO_PATH: {0}".format(AUDIO_PATH))
 
+DEFAULT_VOLUME = cfg.getfloat('audio', 'default_volume')
+if DEFAULT_VOLUME == None: DEFAULT_VOLUME = 0.8
+logging.info("DEFAULT_VOLUME: {0}".format(DEFAULT_VOLUME))
+
 FADE_TIME = cfg.getint('player', 'default_fade_time_ms')
 if FADE_TIME == None: FADE_TIME = 20
 logging.info("FADE_TIME: {0}".format(FADE_TIME))
+
+

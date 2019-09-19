@@ -1,5 +1,5 @@
-import logging
-import random, utils, os
+import os
+import random
 
 import importscore.components as components
 from importscore.components import *
@@ -19,7 +19,7 @@ class Sample(Component):
         self.filepath = os.path.abspath(os.path.join(utils.AUDIO_PATH, self.filename))
         self.length = get_time_value(self, sample.get("length"))
         self.length_ms = int(self.length * 1000)
-        self.add_variants(sample.findall("./variant"))
+        self.add_variants(sample.findall('./variant'))
 
     def add_variants(self, vars):
         "adds variants"
@@ -71,7 +71,6 @@ class Sample(Component):
         else:
             return True
 
-
     def get_sample_components(self, time_offset, variant_id, depth):
         """
         :param partoption: -> Part or Option
@@ -84,11 +83,15 @@ class Sample(Component):
             print("stop a moment")
         # TODO: consider bailing if the depth is greater than some limit tbc
         # TODO: Rounding the time offset to a limited number of places. Is that the right thing to do?
-        return [{'SAMPLE': self, 'VARIANT': variant, 'TIME_OFFSET': round(time_offset, 4), 'DEPTH':++depth}]
+        return [{'SAMPLE': self, 'VARIANT': variant, 'TIME_OFFSET': round(time_offset, 4), 'DEPTH': ++depth}]
+
+    def has_variants(self):
+        return (len(self.variants) > 0)
 
     """
     CLASS METHODS
     """
+
     def get_elements():
         return Component.get_elements(Sample.elements_str)
 
@@ -100,7 +103,10 @@ class Sample(Component):
 
     def log_sample_events(sample_events):
         for sevent in sample_events:
-            logging.info("SAMPLE: {0} VARIANT: {1} TIME OFFSET: {2:07.4f} DEPTH: {3:03d}".format(isinstance(sevent['SAMPLE'], object), isinstance(sevent['VARIANT'], object), sevent['TIME_OFFSET'], sevent['DEPTH']))
+            logging.info("SAMPLE: {0} VARIANT: {1} TIME OFFSET: {2:07.4f} DEPTH: {3:03d}".format(
+                isinstance(sevent['SAMPLE'], object), isinstance(sevent['VARIANT'], object), sevent['TIME_OFFSET'],
+                sevent['DEPTH']))
+
 
 class Variant:
     """
@@ -110,6 +116,7 @@ class Variant:
     def __init__(self, owner_sample, variant):
         self.owner_sample = owner_sample
         self.id = variant.get("id").upper()
+        self.dynamics = []
 
         """
         Loop Start Time
@@ -136,6 +143,16 @@ class Variant:
         # if loopendtime is greater than the length of the sample, trim it back
         if self.loopendtime > owner_sample.length_ms: self.loopendtime = owner_sample.length_ms
 
+        # fix the case where loopendtime < loopstarttime
+        # TODO: document these permissive fixes
+        if self.loopendtime < self.loopstarttime:
+            loopet = self.loopendtime
+            self.loopendtime = self.loopstarttime
+            self.loopstarttime = loopet
+            logging.error(
+                "Sample '{0}': Variant '{1}': loopendtime is before loopstarttime. Values swapped. START: {2:15.4}: END: {3:15.4}".format(
+                    self.owner_sample.id, self.id, self.loopstarttime, self.loopendtime))
+
         """
         Loop Sample Length
         
@@ -149,7 +166,6 @@ class Variant:
         If the playback starts > 0, or ends < loopsamplelength, this si a subloop
         """
         self.is_subloop = (self.loopstarttime > 0) | (self.loopendtime < owner_sample.length_ms)
-
 
         ###################################################
         """
@@ -166,8 +182,16 @@ class Variant:
         for how long to play the sample of Loop Count == 0, ie. infinite loop
         """
         # TODO: clarify the relationship between loopcount, looplength, loopstarttime, loopendtime and their various defaults
+        # looplength is currently used to determine play time if the loopcount == 0 (infinite loop)
         self.looplength = self.get_data(variant, "looplength")
         self.looplength = components.get_time_value(self, self.looplength)
+
+        # capture the error where the loopcount is infinite but no looplength is set - let it play just once
+        # TODO: is that the right way to fix?
+        if self.loopcount == 0 and self.looplength == None:
+            logging.error("Sample '{0}': Variant '{1}': Loopcount is 0 but looplength could not be read.".format(
+                self.owner_sample.id, self.id))
+            self.looplength = self.loopsamplelength
 
         # logging.info("----------------------------------")
         # logging.info("OWNER: {0}".format(owner_sample.id))
@@ -180,21 +204,37 @@ class Variant:
         # logging.info("LOOP COUNT: {0}".format(self.loopcount))
         # logging.info("LOOP LENGTH: {0}".format(self.looplength))
 
+        self.add_dynamics(variant)
+
+        self.initial_level = self.get_initial_level()
+
     def get_data(self, variant, str):
         res = variant.find(str, None)
         return res if (res == None) else res.text
 
-    def add_dynamics(self, dynamics):
+    def add_dynamics(self, variant):
+        dynamics = variant.find('./dynamics')
         instructions = dynamics.findall('./instruction')
         self.dynamics = {}
         for instruction in dynamics:
             inst = Instruction(self, instruction)
             self.dynamics[inst.time] = inst
 
+    def has_dynamics(self):
+        return (len(self.dynamics) > 0)
+
+    def has_start_level_dynamic(self):
+        # dynamics exist and one of them sets the volume at 0.0
+        return (self.has_dynamics() and (0.0 in self.dynamics.keys()))
+
+    def get_initial_level(self):
+        if not self.has_start_level_dynamic(): return utils.DEFAULT_VOLUME
+        return [dyn for dyn in self.dynamics.values() if dyn.time == 0.0][0].level
 
 class Instruction:
     def __init__(self, owner_sample, instruction):
-        self.time = instruction.get("time")
-        if (self.time != None): self.time = get_time_value(owner_sample, self.time)
+        self.time = get_time_value(owner_sample, instruction.get("time"))
+        if (self.time == None): self.time = 0.0
+        self.time = round(self.time, 4)
         self.level = instruction.get("level")
         if (self.level != None): self.level = int(self.level)

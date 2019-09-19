@@ -18,11 +18,16 @@ def unpack_score_events(sample_data_dict_list):
         pygame.init()
         soundmixer = pygame.mixer
         soundmixer.init()
+        score_time_ends = 0
         for sample_data_dict in sample_data_dict_list:
         # Caluclate the associated events to control this sample
         # The associated sample_data is passed to the SampleEventsGenerator object to be unpacked
         # The events associated with the sample are then appended to the local concert_events variable
             sample_events = SampleEventsGenerator(soundmixer, sample_data_dict).sample_events
+            # every sample_events list has a dict member with the TIME_ENDS key set to the time the sample ends (length of playback + time_offset)
+            sample_time_ends = [se for se in sample_events if 'TIME_ENDS' in list(se.keys())][0]['TIME_ENDS']
+            # if this sample's 'TIME_ENDS' is greater than the current score_time_ends, update the latter
+            if sample_time_ends > score_time_ends: score_time_ends = sample_time_ends
             # group events by timing - put all events with the same timing into the same list within the concert_events dict, with the timing as the key
             for evt in sample_events:
                 if evt['TIME'] in concert_events.keys():
@@ -30,6 +35,15 @@ def unpack_score_events(sample_data_dict_list):
                 else:
                     concert_events[evt['TIME']] = [evt]
                 evt.pop('TIME', None)
+        score_time_ends = round(score_time_ends, 3)
+        score_end_event = {'TIME': score_time_ends, 'COMMAND': 'SCORE_END'}
+        if score_time_ends in concert_events.keys():
+            concert_events[score_time_ends].append(score_end_event)
+        else:
+            concert_events[score_time_ends] = [score_end_event]
+        print("PERFORMANCEE ENDS: {0}".format(score_end_event['TIME']))
+
+        # quit pygame and mixer
         soundmixer.quit()
         pygame.quit()
     return concert_events
