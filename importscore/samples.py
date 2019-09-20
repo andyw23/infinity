@@ -172,9 +172,13 @@ class Variant:
         Loop Count
 
         The number of times to play the looop
+        defaults to 1
         """
         self.loopcount = self.get_data(variant, "loopcount")
-        if self.loopcount != None: self.loopcount = int(self.loopcount)
+        if self.loopcount == None:
+            self.loopcount = 1
+        else:
+            self.loopcount = int(self.loopcount)
 
         """
         Loop Length

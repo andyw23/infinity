@@ -41,7 +41,7 @@ def unpack_score_events(sample_data_dict_list):
             concert_events[score_time_ends].append(score_end_event)
         else:
             concert_events[score_time_ends] = [score_end_event]
-        print("PERFORMANCEE ENDS: {0}".format(score_end_event['TIME']))
+        print("PERFORMANCE ENDS: {0}".format(score_end_event['TIME']))
 
         # quit pygame and mixer
         soundmixer.quit()

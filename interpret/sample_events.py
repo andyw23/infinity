@@ -59,11 +59,18 @@ class SampleEventsGenerator():
         event = self.get_basic_event_info()
         event['COMMAND'] = 'START_SAMPLE'
         event['LOOP_LENGTH'] = self.variant.looplength
-        event['LOOP_COUNT'] = self.variant.loopcount
+
+        # in the score, loopcount 0 means play until told to stop, whereas in pygame that is a loopcount of -1.
+        # in the score, a loopcount > 0 determines how many times to play the loop, in loopgame the loop plays (loopcount + 1) times
+        event['LOOP_COUNT'] = (self.variant.loopcount - 1)
+
         event['FADE_MS'] = FADE_TIME
         event['SOUND'] = self.get_sample_sound()
         event['TIME_ENDS'] = self.timeends
-        event['INITIAL_LEVEL'] = self.variant.initial_level
+
+        # in the score, levels are 0-255, in pygame they are 0.0-1.0
+        event['INITIAL_LEVEL'] = round((self.variant.initial_level / 255), 3)
+        event['PLAY_LENGTH'] = self.playlength
         self.sample_events.append(event)
 
     def make_dynamics_events(self):
@@ -74,7 +81,8 @@ class SampleEventsGenerator():
                     event = self.get_basic_event_info()
                     event['COMMAND'] = 'SET_LEVEL'
                     event['TIME'] = round(self.time_offset + inst.time, 3)
-                    event['LEVEL'] = inst.level
+                    # in the score, levels are 0-255, in pygame they are 0.0-1.0
+                    event['LEVEL'] = round((inst.level / 255), 3)
                     self.sample_events.append(event)
 
     def get_sample_sound(self):

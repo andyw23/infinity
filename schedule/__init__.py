@@ -10,25 +10,27 @@ import pygame
 _scheduler = sched.scheduler(time.time, time.sleep)
 mymixer = Mixer()
 
+
 def _score_end(ky, cmnd):
     # COMMAND, TIME, UID
-    print("{0:10.3}: PERFORMANCE ENDS".format(ky))
-
+    print("{0:10.3}: PERFORMANCE ENDS. REINITIALISING MIXER".format(ky))
+    mymixer.init()
 
 def _set_level(ky, cmnd):
     # COMMAND, TIME, UID, LEVEL
     print("{0:10.3}: LEVEL: UID: {2} LEVEL: {1}".format(ky, cmnd['LEVEL'], cmnd['UID']))
+    mymixer.set_level(cmnd)
 
 
 def _start_sample(ky, cmnd):
-    # COMMAND, TIME, UID, LOOP_LENGTH, LOOP_COUNT, FADE_MS, SOUND, TIME_ENDS, INITIAL_LEVEL
+    # COMMAND, TIME, UID, LOOP_LENGTH, LOOP_COUNT, FADE_MS, SOUND, TIME_ENDS, INITIAL_LEVEL, PLAY_LENGTH
     print("{0:10.3}: START: UID: {1}: LENGTH: {2}".format(ky, cmnd['UID'], cmnd['TIME_ENDS']))
     mymixer.play(cmnd)
 
 
 def schedule_command_events(command_events):
     # get a soundmixer
-    pygame.init()
+    # pygame.init()
     soundmixer = pygame.mixer
     soundmixer.init()
 
@@ -41,8 +43,8 @@ def schedule_command_events(command_events):
             _scheduler.enter(ky, 1, commands[cmnd['COMMAND']], (ky, cmnd))
 
 
-    soundmixer.quit()
-    pygame.quit()
+    # soundmixer.quit()
+    # pygame.quit()
 
 
 def create_concert_sounds(soundmixer, cmnd_list):

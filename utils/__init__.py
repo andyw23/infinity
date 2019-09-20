@@ -46,4 +46,8 @@ FADE_TIME = cfg.getint('player', 'default_fade_time_ms')
 if FADE_TIME == None: FADE_TIME = 20
 logging.info("FADE_TIME: {0}".format(FADE_TIME))
 
+NUM_AUDIO_CHANNELS = cfg.getint('audio', 'num_channels')
+if NUM_AUDIO_CHANNELS == None: NUM_AUDIO_CHANNELS = 8
+logging.info("NUM_AUDIO_CHANNELS: {0}".format(NUM_AUDIO_CHANNELS))
+
 
