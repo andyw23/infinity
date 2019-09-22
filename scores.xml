@@ -22,36 +22,39 @@
                 <loopstarttime>12899</loopstarttime>
                 <loopendtime>81420</loopendtime>
                 <loopcount>0</loopcount>
-                <looplength>2:20</looplength>
+                <!--looplength>2:20</looplength-->
+                <looplength>2:10</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.10" level="100"/>
                     <instruction time="1.55" level="100"/>
-                    <instruction time="2.10" level="0"/>
+                    <!--instruction time="2.10" level="0"/-->
                 </dynamics>
             </variant>
             <variant id="2">
                 <loopstarttime>12899</loopstarttime>
                 <loopendtime>81420</loopendtime>
                 <loopcount>0</loopcount>
-                <looplength>1:30</looplength>
+                <!--looplength>1:30</looplength-->
+                <looplength>1:20</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.15" level="100"/>
                     <instruction time="1.05" level="100"/>
-                    <instruction time="1.20" level="0"/>
+                    <!--instruction time="1.20" level="0"/-->
                 </dynamics>
             </variant>
             <variant id="3">
                 <loopstarttime>26000</loopstarttime>
                 <loopendtime>50000</loopendtime>
                 <loopcount>0</loopcount>
-                <looplength>1:45</looplength>
+                <!--looplength>1:45</looplength-->
+                <looplength>1:42</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="0.10" level="80"/>
                     <instruction time="1.24" level="80"/>
-                    <instruction time="1.42" level="0"/>
+                    <!--instruction time="1.42" level="0"/-->
                 </dynamics>
             </variant>
         </sample>
@@ -111,7 +114,7 @@
                     <instruction time="3.49" level="255"/>
                     <instruction time="3.58" level="180"/>
                     <instruction time="3.50" level="0"/>
-                    <instruction time="3.57" level="0"/>
+                    <!--instruction time="3.57" level="0"/-->
                     <instruction time="3.59" level="180"/>
                     <instruction time="5.25" level="180"/>
                     <instruction time="5.40" level="255"/>
@@ -239,7 +242,7 @@
                     <instruction time="0" level="0"/>
                     <instruction time="0.10" level="250"/>
                     <instruction time="1.10" level="250"/>
-                    <instruction time="1.14" level="0"/>
+                    <!--instruction time="1.14" level="0"/-->
                 </dynamics>
             </variant>
             <variant id="ken folk">
@@ -2902,7 +2905,7 @@
                     <instruction time="2.00" level="180"/>
                     <instruction time="2.15" level="250"/>
                     <instruction time="2.25" level="250"/>
-                    <instruction time="2.40" level="0"/>
+                    <!--instruction time="2.40" level="0"/-->
                 </dynamics>
             </variant>
             <variant id="2">
@@ -2923,7 +2926,7 @@
                     <instruction time="0.10" level="80"/>
                     <instruction time="0.26" level="180"/>
                     <instruction time="0.40" level="180"/>
-                    <instruction time="0.50" level="0"/>
+                    <!--instruction time="0.50" level="0"/-->
                 </dynamics>
             </variant>
         </sample>
@@ -2945,7 +2948,7 @@
                     <instruction time="0" level="0"/>
                     <instruction time="0.20" level="120"/>
                     <instruction time="1.55" level="120"/>
-                    <instruction time="2.14" level="0"/>
+                    <!--instruction time="2.14" level="0"/-->
                 </dynamics>
             </variant>
         </sample>

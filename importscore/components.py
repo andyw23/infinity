@@ -76,7 +76,7 @@ class Component:
         else:
             # component added
             Component.components[obj.id.upper()] = obj
-            logging.info("{0}: '{1}' added to dictionary".format(obj.component_type, obj.id))
+            # logging.info("{0}: '{1}' added to dictionary".format(obj.component_type, obj.id))
             """
             If the type of the component is not already in the Component class's list
             of component types (Component.component_types), add it now.
@@ -84,7 +84,7 @@ class Component:
             if not (obj.component_type in Component.component_types):
                 Component.component_types.append(obj.component_type)
                 Component.num_component_types = len(Component.component_types)
-                logging.info("TYPE: {0} added to component_types".format(obj.component_type))
+                # logging.info("TYPE: {0} added to component_types".format(obj.component_type))
 
     def get_elements(elements_str):
         """
@@ -138,7 +138,7 @@ def get_time_value(owner=None, length_str=None):
     :return: float - time in seconds, None if None is
     """
     # if None is passed (which happens when a time attribute is not set), return None
-    if length_str == None: return None
+    if not length_str: return None
     res = 0.0
     # if the string containst ':', interpret the first part as minutes
     if ":" in length_str:
@@ -153,12 +153,3 @@ def get_time_value(owner=None, length_str=None):
         return res
     except ValueError:
         logging.error("Time attribute '{0}', belonging to {1}: {2}, is not a float".format(length_str, owner.component_type, owner.id))
-
-def log_components_loaded():
-    """
-    Writes a brief log report on the import process
-    """
-    logging.info("COMPONENTS CREATED: {}".format(len(Component.components)))
-    logging.info("TYPES FOUND: {}".format(Component.num_component_types))
-    for typ in Component.component_types:
-        logging.info(typ + "S LOADED: {}".format(Component.num_by_type(typ)))

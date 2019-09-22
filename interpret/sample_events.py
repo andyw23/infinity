@@ -10,7 +10,7 @@ class SampleEventsGenerator():
     The events are generated during initialisation, and added to the Object sample_events property.
     """
 
-    def __init__(self, soundmixer, sample_data):
+    def __init__(self, sample_data):
         """
         On __init__ the sample data is analysed to create sample events
         :param sample_data: dict - data asscoiated with a sample: the sampel object itself, the selected variant data, and timeing info.
@@ -30,8 +30,9 @@ class SampleEventsGenerator():
         # calculate when this sample ends
         # loopcount 0 -> loop until looplength
         if self.variant.loopcount == 0:
-            self.playlength = self.variant.looplength
-        elif self.variant.loopcount == None:
+            # looplength is in seconds, multiply to get mS
+            self.playlength = int(round((self.variant.looplength * 1000), 3))
+        elif not self.variant.loopcount:
             self.playlength = self.variant.loopsamplelength
         else:
             self.playlength = self.variant.loopcount * self.variant.loopsamplelength
@@ -49,6 +50,7 @@ class SampleEventsGenerator():
             self.make_start_event()
             if len(self.variant.dynamics) > 0:
                 self.make_dynamics_events()
+            self.make_end_event()
         else:
             logging.error("Sample {0} file does not exist. Failed to generate audio commands")
 
@@ -71,6 +73,12 @@ class SampleEventsGenerator():
         # in the score, levels are 0-255, in pygame they are 0.0-1.0
         event['INITIAL_LEVEL'] = round((self.variant.initial_level / 255), 3)
         event['PLAY_LENGTH'] = self.playlength
+        self.sample_events.append(event)
+
+    def make_end_event(self):
+        event = self.get_basic_event_info()
+        event['COMMAND'] = 'END_SAMPLE'
+        event['TIME'] = self.timeends
         self.sample_events.append(event)
 
     def make_dynamics_events(self):

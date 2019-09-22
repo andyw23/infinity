@@ -7,6 +7,8 @@ import logging
 
 from importscore.components import Component
 from importscore.options import Option
+from interpret.concert_events import unpack_sample_events
+from utils import pfp
 
 
 class Score(Component):
@@ -32,6 +34,7 @@ class Score(Component):
         sample_components = obj.get_sample_components(time_offset=0.0, variant_id=None, depth=1)
         # before returning, as the same sample may be invoked several times by the same score, each invokation needs a unique id
         ids = []
+        # There may be several uses of the same underlying samply in a score. Give them each a UID
         for sample_component in sample_components:
             id = sample_component['SAMPLE'].id
             ids.append(id)
@@ -71,3 +74,27 @@ class Score(Component):
                 return scores[arg-1]
         else:
             return random.choice(scores)
+
+    def get_num_scores():
+        scrs = Score.get_all_scores()
+        if not scrs: return None
+        if len(scrs) == 0: return None
+        return len(scrs)
+
+
+def dump_score_events(sample_events):
+    """
+    prints out each individual event
+    :param sample_events: list - a list of events
+    """
+    for sample_event in sample_events:
+        print("-------------------------------------------")
+        pfp("SAMPLE", sample_event["SAMPLE"].id)
+        pfp("VARIANT", sample_event["VARIANT"].id)
+        pfp("TIME OFFSET", sample_event["TIME_OFFSET"])
+
+
+def load_all_scores():
+    scores = Score.get_all_scores()
+    for score in scores:
+        print(unpack_sample_events(score.get_sample_components()))

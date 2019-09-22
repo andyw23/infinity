@@ -13,8 +13,6 @@ class Sample(Component):
     def __init__(self, sample):
         self.component_type = Sample.component_type
         self.id = sample.get("id").upper()
-        # if self.id == 'ALTAI DOPSH':
-        #     print('DOPSH')
         self.filename = sample.get("file") + '.' + utils.AUDIO_EXTENSION
         self.filepath = os.path.abspath(os.path.join(utils.AUDIO_PATH, self.filename))
         self.length = get_time_value(self, sample.get("length"))
@@ -38,7 +36,7 @@ class Sample(Component):
 
     def get_variant_by_id(self, variant_id):
         # if no variant_id is specified in the call
-        if (variant_id == None):
+        if not variant_id:
             # TODO: test this
             # if there are no Variants we have a critical error
             if not self.has_variants():
@@ -48,14 +46,12 @@ class Sample(Component):
                 return list(self.variants.values())[0]
             else:
                 # Called without a variant_id, the Sample has multiple Variants, so return one at random but log an error
-                logging.error(
-                    "Sample {0} called without variant_id has multiple variants: returning random Variant".format(
-                        self.id))
+                # logging.error("Sample {0} called without variant_id has multiple variants: returning random Variant".format(self.id))
                 return self.get_random_variant()
         elif not variant_id in self.variants.keys():
             # the requested Variant was not found. Reuturn one at random and log an error
             logging.error("Variant '{0}' not found in Sample '{1}'".format(variant_id, self.id))
-            logging.info("VARIANT_IDs: ", self.variants.keys())
+            # logging.info("VARIANT_IDs: ", self.variants.keys())
             return self.get_random_variant()
         else:
             # return the requested variant. Alles gut.
@@ -127,7 +123,7 @@ class Variant:
         self.loopstarttime = self.get_data(variant, "loopstarttime")
         self.loopstarttime = get_time_value(self, self.loopstarttime)
         if (self.loopstarttime != None): self.loopstarttime = int(self.loopstarttime)
-        if (self.loopstarttime == None): self.loopstarttime = 0
+        if not self.loopstarttime: self.loopstarttime = 0
 
         """
         Loop End Time
@@ -139,7 +135,7 @@ class Variant:
         self.loopendtime = get_time_value(self, self.loopendtime)
         if (self.loopendtime != None): self.loopendtime = int(self.loopendtime)
         # if loopendtime isn't set, default to the length of the sample owner
-        if self.loopendtime == None: self.loopendtime = owner_sample.length_ms
+        if not self.loopendtime: self.loopendtime = owner_sample.length_ms
         # if loopendtime is greater than the length of the sample, trim it back
         if self.loopendtime > owner_sample.length_ms: self.loopendtime = owner_sample.length_ms
 
@@ -175,7 +171,7 @@ class Variant:
         defaults to 1
         """
         self.loopcount = self.get_data(variant, "loopcount")
-        if self.loopcount == None:
+        if not self.loopcount:
             self.loopcount = 1
         else:
             self.loopcount = int(self.loopcount)
@@ -192,7 +188,7 @@ class Variant:
 
         # capture the error where the loopcount is infinite but no looplength is set - let it play just once
         # TODO: is that the right way to fix?
-        if self.loopcount == 0 and self.looplength == None:
+        if self.loopcount == 0 and not self.looplength:
             logging.error("Sample '{0}': Variant '{1}': Loopcount is 0 but looplength could not be read.".format(
                 self.owner_sample.id, self.id))
             self.looplength = self.loopsamplelength
@@ -214,7 +210,7 @@ class Variant:
 
     def get_data(self, variant, str):
         res = variant.find(str, None)
-        return res if (res == None) else res.text
+        return res if not res else res.text
 
     def add_dynamics(self, variant):
         dynamics = variant.find('./dynamics')
@@ -238,7 +234,7 @@ class Variant:
 class Instruction:
     def __init__(self, owner_sample, instruction):
         self.time = get_time_value(owner_sample, instruction.get("time"))
-        if (self.time == None): self.time = 0.0
+        if not self.time: self.time = 0.0
         self.time = round(self.time, 4)
         self.level = instruction.get("level")
         if (self.level != None): self.level = int(self.level)
