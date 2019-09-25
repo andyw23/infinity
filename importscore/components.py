@@ -7,6 +7,12 @@ The component class contains a master dictionary of all components within a scor
 
 The class also contains utility fucntions, eg., to examine, test and interrogate the component dictionsry.
 """
+# ##############################################################################
+#  Infinity. Copyright (c) 2019 Oliver Wyman Digital and Andy Wilson. This     #
+#  file is subject to the terms and conditions defined in the file 'LICENSE',  #
+#  which is part of this source code package.                                  #
+# ##############################################################################
+
 import logging
 import xml.etree.ElementTree as ET
 
