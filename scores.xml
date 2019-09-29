@@ -26,8 +26,8 @@
                 <looplength>2:10</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="100"/>
-                    <instruction time="1.55" level="100"/>
+                    <instruction time="0:10" level="100"/>
+                    <instruction time="1:55" level="100"/>
                     <!--instruction time="2.10" level="0"/-->
                 </dynamics>
             </variant>
@@ -39,8 +39,8 @@
                 <looplength>1:20</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="100"/>
-                    <instruction time="1.05" level="100"/>
+                    <instruction time="0:15" level="100"/>
+                    <instruction time="1:05" level="100"/>
                     <!--instruction time="1.20" level="0"/-->
                 </dynamics>
             </variant>
@@ -52,8 +52,8 @@
                 <looplength>1:42</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="80"/>
-                    <instruction time="1.24" level="80"/>
+                    <instruction time="0:10" level="80"/>
+                    <instruction time="1:24" level="80"/>
                     <!--instruction time="1.42" level="0"/-->
                 </dynamics>
             </variant>
@@ -77,9 +77,9 @@
                 <loopendtime>50000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="96"/>
-                    <instruction time="0.30" level="96"/>
-                    <instruction time="0.40" level="20"/>
-                    <instruction time="0.45" level="1"/>
+                    <instruction time="0:30" level="96"/>
+                    <instruction time="0:40" level="20"/>
+                    <instruction time="0:45" level="1"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -108,22 +108,22 @@
                 <loopendtime>609000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.49" level="255"/>
-                    <instruction time="0.59" level="180"/>
-                    <instruction time="2.10" level="255"/>
-                    <instruction time="3.49" level="255"/>
-                    <instruction time="3.58" level="180"/>
-                    <instruction time="3.50" level="0"/>
+                    <instruction time="0:49" level="255"/>
+                    <instruction time="0:59" level="180"/>
+                    <instruction time="2:10" level="255"/>
+                    <instruction time="3:49" level="255"/>
+                    <instruction time="3:58" level="180"/>
+                    <instruction time="3:50" level="0"/>
                     <!--instruction time="3.57" level="0"/-->
-                    <instruction time="3.59" level="180"/>
-                    <instruction time="5.25" level="180"/>
-                    <instruction time="5.40" level="255"/>
-                    <instruction time="6.40" level="255"/>
-                    <instruction time="6.54" level="180"/>
-                    <instruction time="7.05" level="180"/>
-                    <instruction time="7.20" level="220"/>
-                    <instruction time="8.10" level="220"/>
-                    <instruction time="8.25" level="180"/>
+                    <instruction time="3:59" level="180"/>
+                    <instruction time="5:25" level="180"/>
+                    <instruction time="5:40" level="255"/>
+                    <instruction time="6:40" level="255"/>
+                    <instruction time="6:54" level="180"/>
+                    <instruction time="7:05" level="180"/>
+                    <instruction time="7:20" level="220"/>
+                    <instruction time="8:10" level="220"/>
+                    <instruction time="8:25" level="180"/>
                 </dynamics>
             </variant>
             <variant id="breath">
@@ -165,8 +165,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="1.05" level="180"/>
-                    <instruction time="1.12" level="0"/>
+                    <instruction time="1:05" level="180"/>
+                    <instruction time="1:12" level="0"/>
                 </dynamics>
             </variant>
             <variant id="oc solo">
@@ -199,8 +199,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.27" level="180"/>
-                    <instruction time="0.45" level="250"/>
+                    <instruction time="0:27" level="180"/>
+                    <instruction time="0:45" level="250"/>
                 </dynamics>
             </variant>
             <variant id="split 3">
@@ -217,11 +217,11 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.15" level="180"/>
-                    <instruction time="1.40" level="180"/>
-                    <instruction time="1.55" level="250"/>
-                    <instruction time="3.00" level="250"/>
-                    <instruction time="3.07" level="0"/>
+                    <instruction time="0:15" level="180"/>
+                    <instruction time="1:40" level="180"/>
+                    <instruction time="1:55" level="250"/>
+                    <instruction time="3:00" level="250"/>
+                    <instruction time="3:07" level="0"/>
                 </dynamics>
             </variant>
             <variant id="split 5">
@@ -230,8 +230,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="1.33" level="250"/>
-                    <instruction time="1.48" level="180"/>
+                    <instruction time="1:33" level="250"/>
+                    <instruction time="1:48" level="180"/>
                 </dynamics>
             </variant>
             <variant id="split 6">
@@ -240,8 +240,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="250"/>
-                    <instruction time="1.10" level="250"/>
+                    <instruction time="0:10" level="250"/>
+                    <instruction time="1:10" level="250"/>
                     <!--instruction time="1.14" level="0"/-->
                 </dynamics>
             </variant>
@@ -259,9 +259,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="250"/>
-                    <instruction time="0.55" level="250"/>
-                    <instruction time="1.10" level="0"/>
+                    <instruction time="0:10" level="250"/>
+                    <instruction time="0:55" level="250"/>
+                    <instruction time="1:10" level="0"/>
                 </dynamics>
             </variant>
             <variant id="split 8">
@@ -270,8 +270,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="1.03" level="180"/>
-                    <instruction time="1.23" level="0"/>
+                    <instruction time="1:03" level="180"/>
+                    <instruction time="1:23" level="0"/>
                 </dynamics>
             </variant>
             <variant id="split 9">
@@ -280,9 +280,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="180"/>
-                    <instruction time="1.45" level="180"/>
-                    <instruction time="2.00" level="100"/>
+                    <instruction time="0:15" level="180"/>
+                    <instruction time="1:45" level="180"/>
+                    <instruction time="2:00" level="100"/>
                 </dynamics>
             </variant>
         </sample>
@@ -302,8 +302,8 @@
                 <looplength>4:00</looplength>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="3.45" level="250"/>
-                    <instruction time="4.00" level="0"/>
+                    <instruction time="3:45" level="250"/>
+                    <instruction time="4:00" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -318,8 +318,8 @@
                 <looplength>2:20</looplength>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="1.55" level="250"/>
-                    <instruction time="2.10" level="0"/>
+                    <instruction time="1:55" level="250"/>
+                    <instruction time="2:10" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -329,8 +329,8 @@
                 <looplength>4:00</looplength>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="3.45" level="250"/>
-                    <instruction time="4.00" level="0"/>
+                    <instruction time="3:45" level="250"/>
+                    <instruction time="4:00" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -345,8 +345,8 @@
                 <looplength>2:20</looplength>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="1.55" level="250"/>
-                    <instruction time="2.10" level="0"/>
+                    <instruction time="1:55" level="250"/>
+                    <instruction time="2:10" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -364,8 +364,8 @@
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.20" level="250"/>
-                    <instruction time="0.28" level="0"/>
+                    <instruction time="0:20" level="250"/>
+                    <instruction time="0:28" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -374,8 +374,8 @@
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.20" level="250"/>
-                    <instruction time="0.28" level="0"/>
+                    <instruction time="0:20" level="250"/>
+                    <instruction time="0:28" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -418,8 +418,8 @@
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="1.50" level="255"/>
-                    <instruction time="2.10" level="0"/>
+                    <instruction time="1:50" level="255"/>
+                    <instruction time="2:10" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -443,12 +443,12 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="1.20" level="0"/>
-                    <instruction time="1.40" level="180"/>
-                    <instruction time="4.00" level="180"/>
-                    <instruction time="4.40" level="220"/>
-                    <instruction time="5.00" level="220"/>
-                    <instruction time="5.20" level="180"/>
+                    <instruction time="1:20" level="0"/>
+                    <instruction time="1:40" level="180"/>
+                    <instruction time="4:00" level="180"/>
+                    <instruction time="4:40" level="220"/>
+                    <instruction time="5:00" level="220"/>
+                    <instruction time="5:20" level="180"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -456,9 +456,9 @@
                 <looplength>1.57</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.30" level="180"/>
-                    <instruction time="1.35" level="120"/>
-                    <instruction time="1.50" level="0"/>
+                    <instruction time="0:30" level="180"/>
+                    <instruction time="1:35" level="120"/>
+                    <instruction time="1:50" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -466,8 +466,8 @@
                 <looplength>1.00</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.46" level="255"/>
-                    <instruction time="0.59" level="0"/>
+                    <instruction time="0:46" level="255"/>
+                    <instruction time="0:59" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3b">
@@ -475,8 +475,8 @@
                 <looplength>0.47</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.26" level="255"/>
-                    <instruction time="0.40" level="0"/>
+                    <instruction time="0:26" level="255"/>
+                    <instruction time="0:40" level="0"/>
                 </dynamics>
             </variant>
             <variant id="bells">
@@ -486,9 +486,9 @@
                 <looplength>2.30</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="255"/>
-                    <instruction time="2.10" level="255"/>
-                    <instruction time="2.25" level="0"/>
+                    <instruction time="0:20" level="255"/>
+                    <instruction time="2:10" level="255"/>
+                    <instruction time="2:25" level="0"/>
                 </dynamics>
             </variant>
             <variant id="bells 2">
@@ -498,9 +498,9 @@
                 <looplength>1.40</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="255"/>
-                    <instruction time="1.10" level="255"/>
-                    <instruction time="1.35" level="0"/>
+                    <instruction time="0:20" level="255"/>
+                    <instruction time="1:10" level="255"/>
+                    <instruction time="1:35" level="0"/>
                 </dynamics>
             </variant>
             <variant id="bells 3">
@@ -510,9 +510,9 @@
                 <looplength>1.15</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="255"/>
-                    <instruction time="1.00" level="255"/>
-                    <instruction time="1.14" level="0"/>
+                    <instruction time="0:20" level="255"/>
+                    <instruction time="1:00" level="255"/>
+                    <instruction time="1:14" level="0"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -520,9 +520,9 @@
                 <loopendtime>330000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="180"/>
-                    <instruction time="2.00" level="180"/>
-                    <instruction time="2.29" level="0"/>
+                    <instruction time="0:20" level="180"/>
+                    <instruction time="2:00" level="180"/>
+                    <instruction time="2:29" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -542,11 +542,11 @@
                 <looplength>3.40</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.20" level="10"/>
-                    <instruction time="0.40" level="5"/>
-                    <instruction time="3.25" level="5"/>
-                    <instruction time="3.34" level="30"/>
-                    <instruction time="3.40" level="120"/>
+                    <instruction time="0:20" level="10"/>
+                    <instruction time="0:40" level="5"/>
+                    <instruction time="3:25" level="5"/>
+                    <instruction time="3:34" level="30"/>
+                    <instruction time="3:40" level="120"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -571,8 +571,8 @@
                 <looplength>2:11</looplength>
                 <dynamics>
                     <instruction time="0" level="150"/>
-                    <instruction time="1.45" level="150"/>
-                    <instruction time="2.00" level="0"/>
+                    <instruction time="1:45" level="150"/>
+                    <instruction time="2:00" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -580,9 +580,9 @@
                 <looplength>2:11</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.18" level="150"/>
-                    <instruction time="1.45" level="150"/>
-                    <instruction time="2.00" level="0"/>
+                    <instruction time="0:18" level="150"/>
+                    <instruction time="1:45" level="150"/>
+                    <instruction time="2:00" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -590,9 +590,9 @@
                 <looplength>2:11</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.18" level="80"/>
-                    <instruction time="1.45" level="80"/>
-                    <instruction time="2.00" level="0"/>
+                    <instruction time="0:18" level="80"/>
+                    <instruction time="1:45" level="80"/>
+                    <instruction time="2:00" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -627,7 +627,7 @@
                 <looplength>2:34</looplength>
                 <dynamics>
                     <instruction time="0" level="100"/>
-                    <instruction time="0.10" level="170"/>
+                    <instruction time="0:10" level="170"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -644,7 +644,7 @@
                 <looplength>0:24</looplength>
                 <dynamics>
                     <instruction time="0" level="50"/>
-                    <instruction time="0.23" level="35"/>
+                    <instruction time="0:23" level="35"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -652,7 +652,7 @@
                 <looplength>0:07</looplength>
                 <dynamics>
                     <instruction time="0" level="20"/>
-                    <instruction time="0.06" level="35"/>
+                    <instruction time="0:06" level="35"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -719,8 +719,8 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="2.40" level="180"/>
-                    <instruction time="2.55" level="0"/>
+                    <instruction time="2:40" level="180"/>
+                    <instruction time="2:55" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -737,7 +737,7 @@
                 <looplength>0:43</looplength>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.42" level="100"/>
+                    <instruction time="0:42" level="100"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -752,7 +752,7 @@
                 <looplength>0:04</looplength>
                 <dynamics>
                     <instruction time="0" level="100"/>
-                    <instruction time="0.03" level="120"/>
+                    <instruction time="0:03" level="120"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -774,7 +774,7 @@
                 <looplength>0:04</looplength>
                 <dynamics>
                     <instruction time="0" level="10"/>
-                    <instruction time="0.03" level="120"/>
+                    <instruction time="0:03" level="120"/>
                 </dynamics>
             </variant>
         </sample>
@@ -784,9 +784,9 @@
                 <loopendtime>157000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="60"/>
-                    <instruction time="1.00" level="100"/>
-                    <instruction time="2.07" level="150"/>
-                    <instruction time="2.22" level="0"/>
+                    <instruction time="1:00" level="100"/>
+                    <instruction time="2:07" level="150"/>
+                    <instruction time="2:22" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -794,8 +794,8 @@
                 <loopendtime>137000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="200"/>
-                    <instruction time="1.45" level="200"/>
-                    <instruction time="2.00" level="0"/>
+                    <instruction time="1:45" level="200"/>
+                    <instruction time="2:00" level="0"/>
                 </dynamics>
             </variant>
             <variant id="long">
@@ -834,7 +834,7 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.04" level="180"/>
+                    <instruction time="0:04" level="180"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -847,7 +847,7 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.34" level="255"/>
+                    <instruction time="0:34" level="255"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -860,11 +860,11 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.14" level="180"/>
-                    <instruction time="0.16" level="20"/>
-                    <instruction time="0.20" level="255"/>
-                    <instruction time="0.22" level="20"/>
-                    <instruction time="0.32" level="255"/>
+                    <instruction time="0:14" level="180"/>
+                    <instruction time="0:16" level="20"/>
+                    <instruction time="0:20" level="255"/>
+                    <instruction time="0:22" level="20"/>
+                    <instruction time="0:32" level="255"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -896,7 +896,7 @@
                 <looplength>0.43</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.42" level="170"/>
+                    <instruction time="0:42" level="170"/>
                 </dynamics>
             </variant>
             <variant id="hit3">
@@ -942,7 +942,7 @@
                 <looplength>0.04</looplength>
                 <dynamics>
                     <instruction time="0" level="10"/>
-                    <instruction time="0.03" level="80"/>
+                    <instruction time="0:03" level="80"/>
                 </dynamics>
             </variant>
         </sample>
@@ -959,14 +959,14 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="100"/>
-                    <instruction time="1.20" level="100"/>
-                    <instruction time="1.35" level="70"/>
-                    <instruction time="1.45" level="70"/>
-                    <instruction time="2.00" level="50"/>
-                    <instruction time="2.05" level="100"/>
-                    <instruction time="2.14" level="50"/>
-                    <instruction time="2.30" level="50"/>
-                    <instruction time="2.35" level="100"/>
+                    <instruction time="1:20" level="100"/>
+                    <instruction time="1:35" level="70"/>
+                    <instruction time="1:45" level="70"/>
+                    <instruction time="2:00" level="50"/>
+                    <instruction time="2:05" level="100"/>
+                    <instruction time="2:14" level="50"/>
+                    <instruction time="2:30" level="50"/>
+                    <instruction time="2:35" level="100"/>
                 </dynamics>
             </variant>
         </sample>
@@ -976,17 +976,17 @@
                 <looplength>1:14</looplength>
                 <dynamics>
                     <instruction time="0" level="160"/>
-                    <instruction time="0.30" level="120"/>
-                    <instruction time="1.10" level="80"/>
-                    <instruction time="1.13" level="0"/>
+                    <instruction time="0:30" level="120"/>
+                    <instruction time="1:10" level="80"/>
+                    <instruction time="1:13" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="160"/>
-                    <instruction time="0.44" level="120"/>
-                    <instruction time="0.53" level="0"/>
+                    <instruction time="0:44" level="120"/>
+                    <instruction time="0:53" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -996,9 +996,9 @@
                 <looplength>5:20</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="60"/>
-                    <instruction time="4.00" level="60"/>
-                    <instruction time="5.20" level="0"/>
+                    <instruction time="0:15" level="60"/>
+                    <instruction time="4:00" level="60"/>
+                    <instruction time="5:20" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1006,9 +1006,9 @@
                 <looplength>2:30</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="60"/>
-                    <instruction time="2.00" level="60"/>
-                    <instruction time="2.29" level="0"/>
+                    <instruction time="0:15" level="60"/>
+                    <instruction time="2:00" level="60"/>
+                    <instruction time="2:29" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1016,9 +1016,9 @@
                 <looplength>1:15</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="60"/>
-                    <instruction time="0.50" level="255"/>
-                    <instruction time="1.14" level="0"/>
+                    <instruction time="0:15" level="60"/>
+                    <instruction time="0:50" level="255"/>
+                    <instruction time="1:14" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1035,7 +1035,7 @@
                 <looplength>3:10</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="1.00" level="250"/>
+                    <instruction time="1:00" level="250"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1043,7 +1043,7 @@
                 <loopendtime>32000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.19" level="0"/>
+                    <instruction time="0:19" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1060,7 +1060,7 @@
                 <looplength>3:10</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="1.00" level="250"/>
+                    <instruction time="1:00" level="250"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1077,7 +1077,7 @@
                 <looplength>3:10</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="1.00" level="250"/>
+                    <instruction time="1:00" level="250"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1087,8 +1087,8 @@
                 <looplength>2:30</looplength>
                 <dynamics>
                     <instruction time="0" level="120"/>
-                    <instruction time="2.00" level="120"/>
-                    <instruction time="2.15" level="0"/>
+                    <instruction time="2:00" level="120"/>
+                    <instruction time="2:15" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1096,9 +1096,9 @@
                 <looplength>2:30</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.30" level="120"/>
-                    <instruction time="2.00" level="120"/>
-                    <instruction time="2.15" level="0"/>
+                    <instruction time="0:30" level="120"/>
+                    <instruction time="2:00" level="120"/>
+                    <instruction time="2:15" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1106,9 +1106,9 @@
                 <looplength>5:20</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="80"/>
-                    <instruction time="4.00" level="80"/>
-                    <instruction time="5.20" level="0"/>
+                    <instruction time="0:15" level="80"/>
+                    <instruction time="4:00" level="80"/>
+                    <instruction time="5:20" level="0"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -1116,9 +1116,9 @@
                 <looplength>2:30</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="80"/>
-                    <instruction time="2.00" level="80"/>
-                    <instruction time="2.29" level="0"/>
+                    <instruction time="0:15" level="80"/>
+                    <instruction time="2:00" level="80"/>
+                    <instruction time="2:29" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1143,9 +1143,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.30" level="130"/>
-                    <instruction time="3.36" level="130"/>
-                    <instruction time="3.43" level="0"/>
+                    <instruction time="0:30" level="130"/>
+                    <instruction time="3:36" level="130"/>
+                    <instruction time="3:43" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1153,9 +1153,9 @@
                 <looplength>1:50</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.30" level="130"/>
-                    <instruction time="1.20" level="130"/>
-                    <instruction time="1.49" level="0"/>
+                    <instruction time="0:30" level="130"/>
+                    <instruction time="1:20" level="130"/>
+                    <instruction time="1:49" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1163,9 +1163,9 @@
                 <looplength>1:50</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.30" level="130"/>
-                    <instruction time="1.20" level="130"/>
-                    <instruction time="1.49" level="0"/>
+                    <instruction time="0:30" level="130"/>
+                    <instruction time="1:20" level="130"/>
+                    <instruction time="1:49" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1192,8 +1192,8 @@
                 <dynamics>
                     <instruction time="0" level="0"/>
                     <instruction time="30" level="120"/>
-                    <instruction time="4.10" level="120"/>
-                    <instruction time="4.40" level="0"/>
+                    <instruction time="4:10" level="120"/>
+                    <instruction time="4:40" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1242,8 +1242,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="1.00" level="255"/>
-                    <instruction time="1.15" level="0"/>
+                    <instruction time="1:00" level="255"/>
+                    <instruction time="1:15" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1251,7 +1251,7 @@
                 <looplength>0:21</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="0.20" level="0"/>
+                    <instruction time="0:20" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1323,8 +1323,8 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.40" level="250"/>
-                    <instruction time="1.00" level="0"/>
+                    <instruction time="0:40" level="250"/>
+                    <instruction time="1:00" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1332,8 +1332,8 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.40" level="250"/>
-                    <instruction time="1.00" level="0"/>
+                    <instruction time="0:40" level="250"/>
+                    <instruction time="1:00" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1341,8 +1341,8 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.40" level="250"/>
-                    <instruction time="1.00" level="0"/>
+                    <instruction time="0:40" level="250"/>
+                    <instruction time="1:00" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1350,8 +1350,8 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.40" level="250"/>
-                    <instruction time="1.00" level="0"/>
+                    <instruction time="0:40" level="250"/>
+                    <instruction time="1:00" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1359,8 +1359,8 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.40" level="250"/>
-                    <instruction time="1.00" level="0"/>
+                    <instruction time="0:40" level="250"/>
+                    <instruction time="1:00" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1368,8 +1368,8 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="0.40" level="250"/>
-                    <instruction time="1.00" level="0"/>
+                    <instruction time="0:40" level="250"/>
+                    <instruction time="1:00" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1405,7 +1405,7 @@
                 <looplength>0:43</looplength>
                 <dynamics>
                     <instruction time="0" level="80"/>
-                    <instruction time="0.42" level="60"/>
+                    <instruction time="0:42" level="60"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -1441,7 +1441,7 @@
                 <looplength>0:04</looplength>
                 <dynamics>
                     <instruction time="0" level="5"/>
-                    <instruction time="0.03" level="60"/>
+                    <instruction time="0:03" level="60"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1458,7 +1458,7 @@
                 <looplength>2:15</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.30" level="200"/>
+                    <instruction time="0:30" level="200"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1468,7 +1468,7 @@
                 <looplength>0:24</looplength>
                 <dynamics>
                     <instruction time="0" level="110"/>
-                    <instruction time="0.23" level="70"/>
+                    <instruction time="0:23" level="70"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -1478,7 +1478,7 @@
                 <looplength>0:07</looplength>
                 <dynamics>
                     <instruction time="0" level="90"/>
-                    <instruction time="0.06" level="110"/>
+                    <instruction time="0:06" level="110"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -1565,8 +1565,8 @@
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="90"/>
-                    <instruction time="0.56" level="90"/>
-                    <instruction time="1.02" level="110"/>
+                    <instruction time="0:56" level="90"/>
+                    <instruction time="1:02" level="110"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1576,18 +1576,18 @@
                 <looplength>5:20</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="50"/>
-                    <instruction time="4.00" level="50"/>
-                    <instruction time="5.20" level="0"/>
+                    <instruction time="0:20" level="50"/>
+                    <instruction time="4:00" level="50"/>
+                    <instruction time="5:20" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="20"/>
-                    <instruction time="0.36" level="20"/>
-                    <instruction time="0.44" level="0"/>
+                    <instruction time="0:15" level="20"/>
+                    <instruction time="0:36" level="20"/>
+                    <instruction time="0:44" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1597,8 +1597,8 @@
                 <loopendtime>160000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="50"/>
-                    <instruction time="2.00" level="50"/>
-                    <instruction time="2.30" level="0"/>
+                    <instruction time="2:00" level="50"/>
+                    <instruction time="2:30" level="0"/>
                 </dynamics>
             </variant>
             <variant id="1b">
@@ -1613,8 +1613,8 @@
                 <loopendtime>160000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="2.15" level="180"/>
-                    <instruction time="2.30" level="0"/>
+                    <instruction time="2:15" level="180"/>
+                    <instruction time="2:30" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1639,8 +1639,8 @@
                 <loopendtime>140000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="50"/>
-                    <instruction time="1.55" level="50"/>
-                    <instruction time="2.10" level="0"/>
+                    <instruction time="1:55" level="50"/>
+                    <instruction time="2:10" level="0"/>
                 </dynamics>
             </variant>
             <variant id="1b">
@@ -1655,8 +1655,8 @@
                 <loopendtime>140000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="1.55" level="180"/>
-                    <instruction time="2.10" level="0"/>
+                    <instruction time="1:55" level="180"/>
+                    <instruction time="2:10" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1673,8 +1673,8 @@
                 <loopendtime>160000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="2.10" level="180"/>
-                    <instruction time="2.25" level="0"/>
+                    <instruction time="2:10" level="180"/>
+                    <instruction time="2:25" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1690,8 +1690,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="1.10" level="180"/>
-                    <instruction time="1.18" level="140"/>
+                    <instruction time="1:10" level="180"/>
+                    <instruction time="1:18" level="140"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1700,8 +1700,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="1.02" level="210"/>
-                    <instruction time="1.17" level="0"/>
+                    <instruction time="1:02" level="210"/>
+                    <instruction time="1:17" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1729,9 +1729,9 @@
                 <looplength>1:05</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.14" level="8"/>
-                    <instruction time="0.44" level="8"/>
-                    <instruction time="1.04" level="0"/>
+                    <instruction time="0:14" level="8"/>
+                    <instruction time="0:44" level="8"/>
+                    <instruction time="1:04" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1747,8 +1747,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="60"/>
-                    <instruction time="1.02" level="60"/>
-                    <instruction time="1.03" level="0"/>
+                    <instruction time="1:02" level="60"/>
+                    <instruction time="1:03" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1757,9 +1757,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="30"/>
-                    <instruction time="1.20" level="30"/>
-                    <instruction time="1.58" level="0"/>
+                    <instruction time="0:20" level="30"/>
+                    <instruction time="1:20" level="30"/>
+                    <instruction time="1:58" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1804,7 +1804,7 @@
                 <loopcount>7</loopcount>
                 <dynamics>
                     <instruction time="0" level="150"/>
-                    <instruction time="0.12" level="0"/>
+                    <instruction time="0:12" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1813,7 +1813,7 @@
                 <loopcount>7</loopcount>
                 <dynamics>
                     <instruction time="0" level="150"/>
-                    <instruction time="0.12" level="0"/>
+                    <instruction time="0:12" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -1835,8 +1835,8 @@
                 <looplength>1:37</looplength>
                 <dynamics>
                     <instruction time="0" level="120"/>
-                    <instruction time="1.20" level="120"/>
-                    <instruction time="1.36" level="0"/>
+                    <instruction time="1:20" level="120"/>
+                    <instruction time="1:36" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1846,7 +1846,7 @@
                 <looplength>0:18</looplength>
                 <dynamics>
                     <instruction time="0" level="35"/>
-                    <instruction time="0.17" level="5"/>
+                    <instruction time="0:17" level="5"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1856,7 +1856,7 @@
                 <looplength>0:05</looplength>
                 <dynamics>
                     <instruction time="0" level="50"/>
-                    <instruction time="0.04" level="70"/>
+                    <instruction time="0:04" level="70"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -1884,7 +1884,7 @@
                 <looplength>0:05</looplength>
                 <dynamics>
                     <instruction time="0" level="4"/>
-                    <instruction time="0.04" level="20"/>
+                    <instruction time="0:04" level="20"/>
                 </dynamics>
             </variant>
             <variant id="7">
@@ -1903,8 +1903,8 @@
                 <looplength>3:00</looplength>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="2.44" level="200"/>
-                    <instruction time="2.59" level="100"/>
+                    <instruction time="2:44" level="200"/>
+                    <instruction time="2:59" level="100"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -1912,7 +1912,7 @@
                 <looplength>0:32</looplength>
                 <dynamics>
                     <instruction time="0" level="80"/>
-                    <instruction time="0.31" level="50"/>
+                    <instruction time="0:31" level="50"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -1920,7 +1920,7 @@
                 <looplength>0:09</looplength>
                 <dynamics>
                     <instruction time="0" level="40"/>
-                    <instruction time="0.08" level="80"/>
+                    <instruction time="0:08" level="80"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -1928,7 +1928,7 @@
                 <looplength>0:03</looplength>
                 <dynamics>
                     <instruction time="0" level="170"/>
-                    <instruction time="0.02" level="190"/>
+                    <instruction time="0:02" level="190"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -1950,7 +1950,7 @@
                 <looplength>0:03</looplength>
                 <dynamics>
                     <instruction time="0" level="70"/>
-                    <instruction time="0.02" level="190"/>
+                    <instruction time="0:02" level="190"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2056,9 +2056,9 @@
                 <looplength>2:07</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="1.00" level="180"/>
-                    <instruction time="1.35" level="180"/>
-                    <instruction time="1.55" level="0"/>
+                    <instruction time="1:00" level="180"/>
+                    <instruction time="1:35" level="180"/>
+                    <instruction time="1:55" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2068,9 +2068,9 @@
                 <looplength>2:00</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="180"/>
-                    <instruction time="1.40" level="220"/>
-                    <instruction time="1.59" level="0"/>
+                    <instruction time="0:15" level="180"/>
+                    <instruction time="1:40" level="220"/>
+                    <instruction time="1:59" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2082,9 +2082,9 @@
                 <loopendtime>2600</loopendtime>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.12" level="225"/>
-                    <instruction time="0.18" level="225"/>
-                    <instruction time="0.30" level="30"/>
+                    <instruction time="0:12" level="225"/>
+                    <instruction time="0:18" level="225"/>
+                    <instruction time="0:30" level="30"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2108,7 +2108,7 @@
                 <looplength>0:24</looplength>
                 <dynamics>
                     <instruction time="0" level="100"/>
-                    <instruction time="0.23" level="60"/>
+                    <instruction time="0:23" level="60"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2116,7 +2116,7 @@
                 <looplength>0:07</looplength>
                 <dynamics>
                     <instruction time="0" level="60"/>
-                    <instruction time="0.06" level="80"/>
+                    <instruction time="0:06" level="80"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -2161,8 +2161,8 @@
                 <looplength>2:42</looplength>
                 <dynamics>
                     <instruction time="0" level="100"/>
-                    <instruction time="2.15" level="100"/>
-                    <instruction time="2.30" level="0"/>
+                    <instruction time="2:15" level="100"/>
+                    <instruction time="2:30" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -2170,8 +2170,8 @@
                 <looplength>3:00</looplength>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="2.44" level="180"/>
-                    <instruction time="2.59" level="100"/>
+                    <instruction time="2:44" level="180"/>
+                    <instruction time="2:59" level="100"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2179,7 +2179,7 @@
                 <looplength>0:32</looplength>
                 <dynamics>
                     <instruction time="0" level="140"/>
-                    <instruction time="0.31" level="100"/>
+                    <instruction time="0:31" level="100"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -2187,7 +2187,7 @@
                 <looplength>0:09</looplength>
                 <dynamics>
                     <instruction time="0" level="40"/>
-                    <instruction time="0.08" level="60"/>
+                    <instruction time="0:08" level="60"/>
                 </dynamics>
             </variant>
             <variant id="6">
@@ -2223,7 +2223,7 @@
                 <looplength>2:42</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="2.41" level="255"/>
+                    <instruction time="2:41" level="255"/>
                 </dynamics>
             </variant>
             <variant id="dec">
@@ -2231,7 +2231,7 @@
                 <looplength>2:42</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="2.41" level="0"/>
+                    <instruction time="2:41" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2271,7 +2271,7 @@
                 <looplength>2:42</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="2.41" level="255"/>
+                    <instruction time="2:41" level="255"/>
                 </dynamics>
             </variant>
             <variant id="dec">
@@ -2279,7 +2279,7 @@
                 <looplength>2:42</looplength>
                 <dynamics>
                     <instruction time="0" level="255"/>
-                    <instruction time="2.41" level="0"/>
+                    <instruction time="2:41" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2296,7 +2296,7 @@
                 <looplength>0:18</looplength>
                 <dynamics>
                     <instruction time="0" level="60"/>
-                    <instruction time="0.17" level="20"/>
+                    <instruction time="0:17" level="20"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -2304,7 +2304,7 @@
                 <looplength>0:05</looplength>
                 <dynamics>
                     <instruction time="0" level="80"/>
-                    <instruction time="0.04" level="100"/>
+                    <instruction time="0:04" level="100"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2326,7 +2326,7 @@
                 <looplength>0:05</looplength>
                 <dynamics>
                     <instruction time="0" level="5"/>
-                    <instruction time="0.04" level="20"/>
+                    <instruction time="0:04" level="20"/>
                 </dynamics>
             </variant>
             <variant id="7">
@@ -2357,7 +2357,7 @@
                 <looplength>0:18</looplength>
                 <dynamics>
                     <instruction time="0" level="60"/>
-                    <instruction time="0.17" level="20"/>
+                    <instruction time="0:17" level="20"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2365,7 +2365,7 @@
                 <looplength>0:05</looplength>
                 <dynamics>
                     <instruction time="0" level="80"/>
-                    <instruction time="0.04" level="100"/>
+                    <instruction time="0:04" level="100"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -2387,7 +2387,7 @@
                 <looplength>0:05</looplength>
                 <dynamics>
                     <instruction time="0" level="5"/>
-                    <instruction time="0.04" level="20"/>
+                    <instruction time="0:04" level="20"/>
                 </dynamics>
             </variant>
             <variant id="8">
@@ -2405,8 +2405,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="2.10" level="180"/>
-                    <instruction time="2.28" level="0"/>
+                    <instruction time="2:10" level="180"/>
+                    <instruction time="2:28" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -2429,8 +2429,8 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="2.00" level="180"/>
-                    <instruction time="2.11" level="0"/>
+                    <instruction time="2:00" level="180"/>
+                    <instruction time="2:11" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -2438,8 +2438,8 @@
                 <loopendtime>50000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.35" level="180"/>
-                    <instruction time="0.50" level="0"/>
+                    <instruction time="0:35" level="180"/>
+                    <instruction time="0:50" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -2448,8 +2448,8 @@
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.15" level="180"/>
-                    <instruction time="0.22" level="0"/>
+                    <instruction time="0:15" level="180"/>
+                    <instruction time="0:22" level="0"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2458,9 +2458,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="250"/>
-                    <instruction time="0.30" level="250"/>
-                    <instruction time="0.44" level="0"/>
+                    <instruction time="0:10" level="250"/>
+                    <instruction time="0:30" level="250"/>
+                    <instruction time="0:44" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2470,8 +2470,8 @@
                 <loopendtime>113000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="250"/>
-                    <instruction time="1.20" level="250"/>
-                    <instruction time="1.30" level="0"/>
+                    <instruction time="1:20" level="250"/>
+                    <instruction time="1:30" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2481,8 +2481,8 @@
                 <looplength>2:15</looplength>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="1.45" level="180"/>
-                    <instruction time="2.10" level="0"/>
+                    <instruction time="1:45" level="180"/>
+                    <instruction time="2:10" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2502,8 +2502,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.10" level="180"/>
-                    <instruction time="0.12" level="0"/>
+                    <instruction time="0:10" level="180"/>
+                    <instruction time="0:12" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -2512,9 +2512,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="180"/>
-                    <instruction time="1.35" level="180"/>
-                    <instruction time="1.50" level="0"/>
+                    <instruction time="0:10" level="180"/>
+                    <instruction time="1:35" level="180"/>
+                    <instruction time="1:50" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -2523,9 +2523,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="50"/>
-                    <instruction time="9.35" level="50"/>
-                    <instruction time="9.50" level="0"/>
+                    <instruction time="0:10" level="50"/>
+                    <instruction time="9:35" level="50"/>
+                    <instruction time="9:50" level="0"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2534,9 +2534,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="180"/>
-                    <instruction time="3.05" level="180"/>
-                    <instruction time="3.31" level="0"/>
+                    <instruction time="0:10" level="180"/>
+                    <instruction time="3:05" level="180"/>
+                    <instruction time="3:31" level="0"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -2545,10 +2545,10 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="0"/>
-                    <instruction time="0.20" level="180"/>
-                    <instruction time="2.15" level="180"/>
-                    <instruction time="2.29" level="0"/>
+                    <instruction time="0:10" level="0"/>
+                    <instruction time="0:20" level="180"/>
+                    <instruction time="2:15" level="180"/>
+                    <instruction time="2:29" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2558,9 +2558,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="60"/>
-                    <instruction time="2.00" level="60"/>
-                    <instruction time="2.48" level="20"/>
+                    <instruction time="0:15" level="60"/>
+                    <instruction time="2:00" level="60"/>
+                    <instruction time="2:48" level="20"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -2568,9 +2568,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="60"/>
-                    <instruction time="2.00" level="60"/>
-                    <instruction time="2.48" level="20"/>
+                    <instruction time="0:15" level="60"/>
+                    <instruction time="2:00" level="60"/>
+                    <instruction time="2:48" level="20"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -2578,7 +2578,7 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="180"/>
+                    <instruction time="0:15" level="180"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2587,8 +2587,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="40"/>
-                    <instruction time="0.20" level="0"/>
+                    <instruction time="0:15" level="40"/>
+                    <instruction time="0:20" level="0"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -2596,9 +2596,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="60"/>
-                    <instruction time="0.45" level="100"/>
-                    <instruction time="1.10" level="180"/>
+                    <instruction time="0:15" level="60"/>
+                    <instruction time="0:45" level="100"/>
+                    <instruction time="1:10" level="180"/>
                 </dynamics>
             </variant>
             <variant id="5b">
@@ -2606,9 +2606,9 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.15" level="60"/>
-                    <instruction time="0.45" level="100"/>
-                    <instruction time="1.10" level="180"/>
+                    <instruction time="0:15" level="60"/>
+                    <instruction time="0:45" level="100"/>
+                    <instruction time="1:10" level="180"/>
                 </dynamics>
             </variant>
             <variant id="6">
@@ -2617,7 +2617,7 @@
                 <loopcount>2</loopcount>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.05" level="0"/>
+                    <instruction time="0:05" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2627,8 +2627,8 @@
                 <loopendtime>120000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="1.35" level="180"/>
-                    <instruction time="1.50" level="0"/>
+                    <instruction time="1:35" level="180"/>
+                    <instruction time="1:50" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -2645,8 +2645,8 @@
                 <looplength>2:20</looplength>
                 <dynamics>
                     <instruction time="0" level="100"/>
-                    <instruction time="1.55" level="100"/>
-                    <instruction time="2.10" level="0"/>
+                    <instruction time="1:55" level="100"/>
+                    <instruction time="2:10" level="0"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2654,8 +2654,8 @@
                 <loopendtime>600000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="30"/>
-                    <instruction time="9.35" level="30"/>
-                    <instruction time="9.50" level="0"/>
+                    <instruction time="9:35" level="30"/>
+                    <instruction time="9:50" level="0"/>
                 </dynamics>
             </variant>
             <variant id="long">
@@ -2669,18 +2669,18 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="30"/>
-                    <instruction time="0.40" level="30"/>
-                    <instruction time="0.58" level="0"/>
+                    <instruction time="0:10" level="30"/>
+                    <instruction time="0:40" level="30"/>
+                    <instruction time="0:58" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="70"/>
-                    <instruction time="0.40" level="70"/>
-                    <instruction time="0.58" level="0"/>
+                    <instruction time="0:10" level="70"/>
+                    <instruction time="0:40" level="70"/>
+                    <instruction time="0:58" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2688,9 +2688,9 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.27" level="180"/>
-                    <instruction time="0.28" level="255"/>
-                    <instruction time="0.47" level="255"/>
+                    <instruction time="0:27" level="180"/>
+                    <instruction time="0:28" level="255"/>
+                    <instruction time="0:47" level="255"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2698,15 +2698,15 @@
             <variant id="1">
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.20" level="180"/>
-                    <instruction time="0.21" level="136"/>
+                    <instruction time="0:20" level="180"/>
+                    <instruction time="0:21" level="136"/>
                 </dynamics>
             </variant>
             <variant id="2">
                 <dynamics>
                     <instruction time="0" level="80"/>
-                    <instruction time="0.20" level="80"/>
-                    <instruction time="0.21" level="60"/>
+                    <instruction time="0:20" level="80"/>
+                    <instruction time="0:21" level="60"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -2716,8 +2716,8 @@
                 <looplength>4:00</looplength>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="1.00" level="180"/>
-                    <instruction time="3.55" level="0"/>
+                    <instruction time="1:00" level="180"/>
+                    <instruction time="3:55" level="0"/>
                 </dynamics>
             </variant>
             <variant id="4">
@@ -2727,8 +2727,8 @@
                 <looplength>3:45</looplength>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.45" level="180"/>
-                    <instruction time="3.40" level="0"/>
+                    <instruction time="0:45" level="180"/>
+                    <instruction time="3:40" level="0"/>
                 </dynamics>
             </variant>
             <variant id="5">
@@ -2738,8 +2738,8 @@
                 <looplength>3:30</looplength>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.30" level="180"/>
-                    <instruction time="3.25" level="0"/>
+                    <instruction time="0:30" level="180"/>
+                    <instruction time="3:25" level="0"/>
                 </dynamics>
             </variant>
             <variant id="6">
@@ -2749,8 +2749,8 @@
                 <looplength>3:15</looplength>
                 <dynamics>
                     <instruction time="0" level="180"/>
-                    <instruction time="0.15" level="180"/>
-                    <instruction time="3.10" level="0"/>
+                    <instruction time="0:15" level="180"/>
+                    <instruction time="3:10" level="0"/>
                 </dynamics>
             </variant>
             <variant id="7">
@@ -2758,8 +2758,8 @@
                 <loopendtime>81000</loopendtime>
                 <dynamics>
                     <instruction time="0" level="160"/>
-                    <instruction time="1.06" level="150"/>
-                    <instruction time="1.20" level="0"/>
+                    <instruction time="1:06" level="150"/>
+                    <instruction time="1:20" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2827,11 +2827,11 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="30"/>
-                    <instruction time="0.26" level="30"/>
-                    <instruction time="0.40" level="100"/>
-                    <instruction time="0.50" level="100"/>
-                    <instruction time="1.00" level="30"/>
-                    <instruction time="1.19" level="50"/>
+                    <instruction time="0:26" level="30"/>
+                    <instruction time="0:40" level="100"/>
+                    <instruction time="0:50" level="100"/>
+                    <instruction time="1:00" level="30"/>
+                    <instruction time="1:19" level="50"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2843,9 +2843,9 @@
                 <loopendtime>4960</loopendtime>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="50"/>
-                    <instruction time="4.00" level="50"/>
-                    <instruction time="5.20" level="0"/>
+                    <instruction time="0:20" level="50"/>
+                    <instruction time="4:00" level="50"/>
+                    <instruction time="5:20" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -2855,9 +2855,9 @@
                 <loopendtime>4960</loopendtime>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="50"/>
-                    <instruction time="3.20" level="50"/>
-                    <instruction time="3.49" level="0"/>
+                    <instruction time="0:20" level="50"/>
+                    <instruction time="3:20" level="50"/>
+                    <instruction time="3:49" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -2865,9 +2865,9 @@
                 <looplength>1:40</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="30"/>
-                    <instruction time="1.25" level="30"/>
-                    <instruction time="1.39" level="0"/>
+                    <instruction time="0:20" level="30"/>
+                    <instruction time="1:25" level="30"/>
+                    <instruction time="1:39" level="0"/>
                 </dynamics>
             </variant>
         </sample>
@@ -2876,8 +2876,8 @@
                 <loopcount>1</loopcount>
                 <dynamics>
                     <instruction time="0" level="140"/>
-                    <instruction time="4.05" level="140"/>
-                    <instruction time="4.20" level="0"/>
+                    <instruction time="4:05" level="140"/>
+                    <instruction time="4:20" level="0"/>
                 </dynamics>
             </variant>
             <variant id="2">
@@ -2901,10 +2901,10 @@
                 <looplength>2:45</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="180"/>
-                    <instruction time="2.00" level="180"/>
-                    <instruction time="2.15" level="250"/>
-                    <instruction time="2.25" level="250"/>
+                    <instruction time="0:20" level="180"/>
+                    <instruction time="2:00" level="180"/>
+                    <instruction time="2:15" level="250"/>
+                    <instruction time="2:25" level="250"/>
                     <!--instruction time="2.40" level="0"/-->
                 </dynamics>
             </variant>
@@ -2913,9 +2913,9 @@
                 <looplength>1:44</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="180"/>
-                    <instruction time="1.30" level="180"/>
-                    <instruction time="1.40" level="0"/>
+                    <instruction time="0:20" level="180"/>
+                    <instruction time="1:30" level="180"/>
+                    <instruction time="1:40" level="0"/>
                 </dynamics>
             </variant>
             <variant id="3">
@@ -2923,9 +2923,9 @@
                 <looplength>0:53</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.10" level="80"/>
-                    <instruction time="0.26" level="180"/>
-                    <instruction time="0.40" level="180"/>
+                    <instruction time="0:10" level="80"/>
+                    <instruction time="0:26" level="180"/>
+                    <instruction time="0:40" level="180"/>
                     <!--instruction time="0.50" level="0"/-->
                 </dynamics>
             </variant>
@@ -2946,8 +2946,8 @@
                 <looplength>2:15</looplength>
                 <dynamics>
                     <instruction time="0" level="0"/>
-                    <instruction time="0.20" level="120"/>
-                    <instruction time="1.55" level="120"/>
+                    <instruction time="0:20" level="120"/>
+                    <instruction time="1:55" level="120"/>
                     <!--instruction time="2.14" level="0"/-->
                 </dynamics>
             </variant>
