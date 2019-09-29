@@ -15,7 +15,7 @@ class OptionPart:
     Object that contains optional attribute settings
     """
     def __init__(self, owner, option_part):
-        # owner is the sample that owns this variant
+        # owner is the sample that owns this variant / option / part
         self.owner = owner
         self.id = option_part.get("id").upper()
         var = option_part.get("variant", None)
@@ -44,10 +44,12 @@ class OptionPart:
         # return (random.uniform(0, self.start) if self.random else self.start)
 
 class Option(OptionPart):
+    # subclassed because at a later date we might need to override
     def __init__(self, owner, option):
         super().__init__(owner, option)
 
 
 class Part(OptionPart):
+    # subclassed because at a later date we might need to override
     def __init__(self, owner, part):
         super().__init__(owner, part)

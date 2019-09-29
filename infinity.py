@@ -28,7 +28,7 @@ class Player():
             if self.currentscorenum > self.numscores: self.currentscorenum = 1
 
             self.score = Score.get_score(self.currentscorenum)
-            if self.score != None:
+            if self.score:
                 print("SCORE '{0}' RETRIEVED".format(self.score.id))
                 sample_events = self.score.get_sample_components()
                 # Sample.log_sample_events(sample_events)

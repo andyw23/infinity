@@ -12,7 +12,8 @@ from importscore.samples import Sample
 from importscore.options import Option
 
 class Choice(Component):
-    """Creates a Choice object"""
+    # Creates a Choice object
+    # Sample, Score, Choice and Concert are the basic components of a score
     component_type = 'CHOICE'
     elements_str = "./components/choose"
 

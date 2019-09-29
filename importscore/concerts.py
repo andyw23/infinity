@@ -11,6 +11,7 @@ from importscore.samples import Sample
 
 class Concert(Component):
     """Creates a Concert object"""
+    # Sample, Score, Choice and Concert are the basic components of a score
     component_type = 'CONCERT'
     elements_str = "./components/concert"
 

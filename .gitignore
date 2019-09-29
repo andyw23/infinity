@@ -127,7 +127,7 @@ dmypy.json
 
 /.env
 /.env/**
-/import.log
+/*.log
 /static
 /static/**
 /res/scores

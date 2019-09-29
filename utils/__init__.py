@@ -1,17 +1,17 @@
-"""PRINT_PRETTY_FORMAT function"""
-
-"""
-LOGGING
-"""
 # ##############################################################################
 #  Infinity. Copyright (c) 2019 Oliver Wyman Digital and Andy Wilson. This     #
 #  file is subject to the terms and conditions defined in the file 'LICENSE',  #
 #  which is part of this source code package.                                  #
 # ##############################################################################
+"""PRINT_PRETTY_FORMAT function"""
+
+"""
+LOGGING
+"""
 
 import logging
 logging.basicConfig(
-    filename='import.log',
+    filename='infinity.log',
     level=logging.DEBUG,
     format='%(asctime)s:%(msecs)03d: %(levelname)s: %(module)s: %(funcName)s: %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'

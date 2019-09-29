@@ -53,7 +53,7 @@ class Mixer():
         else:
             ch.set_level(cmnd)
             str = "LEVEL: '{0}': Set: {1:3.3}.".format(cmnd['UID'], cmnd['LEVEL'])
-            logging.error(str)
+            logging.info(str)
             print(str)
 
     def end(self, time, cmnd):

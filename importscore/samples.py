@@ -13,6 +13,7 @@ from importscore.components import *
 
 class Sample(Component):
     """Creates a Sample object"""
+    # Sample, Score, Choice and Concert are the basic components of a score
     component_type = 'SAMPLE'
     elements_str = "./components/sample"
 
@@ -216,7 +217,10 @@ class Variant:
 
     def get_data(self, variant, str):
         res = variant.find(str, None)
-        return res if not res else res.text
+        if res == None:
+            return res
+        else:
+            return res.text
 
     def add_dynamics(self, variant):
         dynamics = variant.find('./dynamics')

@@ -18,6 +18,11 @@ from utils import pfp
 
 
 class Score(Component):
+    """
+    Score component
+    A score component is simply a pointer into the sea of other components
+    """
+    # Sample, Score, Choice and Concert are the basic components of a score
     component_type = 'SCORE'
     elements_str = ".//score"
 

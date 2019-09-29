@@ -90,6 +90,8 @@ class SampleEventsGenerator():
     def make_dynamics_events(self):
         if self.variant.has_dynamics():
             for inst_key in self.variant.dynamics.keys():
+                # if inst_key == 1, this is an initial volume event and will be set as
+                # part of starting to play the parent sample
                 if inst_key != 0.0:
                     inst = self.variant.dynamics[inst_key]
                     event = self.get_basic_event_info()
