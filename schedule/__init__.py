@@ -1,6 +1,3 @@
-"""
-
-"""
 # ##############################################################################
 #  Infinity. Copyright (c) 2019 Oliver Wyman Digital and Andy Wilson. This     #
 #  file is subject to the terms and conditions defined in the file 'LICENSE',  #
@@ -35,7 +32,7 @@ class ScheduleChecker():
                 print("REINITIALISING")
                 self.clear_scheduled_events()
                 mixer.mixer.init()
-            else:
+            elif num_chans_busy < 2:
                 print("CHANNELS BUSY: {0}".format(num_chans_busy))
 
     def clear_scheduled_events(self):
@@ -43,10 +40,10 @@ class ScheduleChecker():
         for evt in evts: self.schedular.cancel(evt)
 
     def recent_chans_free_below_threshold(self):
-        # if the number of busy channels has been low (<= 1) for three times around this check, return True
+        # if the number of busy channels has been low (< 1) for three times around this check, return True
         if len(self.recentchannelsfree) < 3: return False
         for fr in self.recentchannelsfree:
-            if fr > 1: return False
+            if fr > 0: return False
         return True
 
 schedulechecker = ScheduleChecker(mixer, _scheduler)
