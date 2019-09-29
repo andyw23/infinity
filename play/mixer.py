@@ -12,6 +12,7 @@ import utils
 
 pygame.init()
 _soundmixer = pygame.mixer
+# NUM_AUDIO_CHANNELS is set in the utils module by reading config.ini
 _soundmixer.set_num_channels(utils.NUM_AUDIO_CHANNELS)
 _soundmixer.init(channels=utils.NUM_AUDIO_CHANNELS)
 print(_soundmixer.get_init())
